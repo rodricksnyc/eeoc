@@ -136,6 +136,8 @@ p.blue{
   min-height: 40rem;
 
   max-height: 78rem;
+  flex-direction: column;
+    justify-content: center;
 }
 
 .hero-img {
