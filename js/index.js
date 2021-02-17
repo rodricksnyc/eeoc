@@ -166,7 +166,8 @@ if ($(document).innerWidth() < 992 && $(document).innerWidth() > 767) {
 
 if ($(document).innerWidth() <= 767) {
 
-  $('.openIt').click(function() {
+  $('.contractors').attr('src', 'images/mobile.svg')
+    $('.openIt').click(function() {
 
 
     setTimeout(function() {

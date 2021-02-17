@@ -367,7 +367,7 @@ p.blue{
   border-radius: 50%;
   background: #397BA1;
   opacity:.85;
-  top:-2rem;
+  top:-1.4rem;
   left:.2rem;
 }
 
@@ -1040,6 +1040,12 @@ footer h2 {
     background-position: bottom;
   }
 
+  .openTab {
+    transform: rotate(0deg);
+    padding: .8rem .7rem;
+
+}
+
   .hero-img-container .offset-lg-1 {
     margin-left: 0%;
     padding: 0em 2em;
@@ -1245,7 +1251,7 @@ footer h2 {
   }
   #one{
     right:-6px;
-    top: 200px;
+    top: 120px;
   }
   #one i{
     font-weight: 500;
@@ -1292,7 +1298,12 @@ footer h2 {
 
 
 @media (max-width:767px){
-
+ .employers {
+      max-width: 13em;
+}
+.contractors {
+  max-width: 15em;
+}
 
   .fa-briefcase {
     font-size: 30px;
@@ -1346,7 +1357,7 @@ footer h2 {
   }
   .strong {
     font-weight: 600;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.3;
   }
   .whiteBox{
@@ -1422,14 +1433,6 @@ footer h2 {
     width: 100vw;
   }
 
-  #one{
-    top:200px;
-  }
-
-
-  /* .side-menu-container .nav, .backButton{
-  display: none;
-  } */
 
   .blueBlock .img-fluid{
     max-width:120%;
