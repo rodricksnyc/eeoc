@@ -118,6 +118,9 @@ p.blue{
   margin-left: 1rem;
 }
 
+.padding{
+    padding: 0% 22%;
+}
 
 .main{
   min-height:120vh;
@@ -927,6 +930,7 @@ margin-right:15%;
     -ms-flex-order: 2;
     order: 1;
   }
+
 }
 
 
@@ -1035,10 +1039,18 @@ margin-right:15%;
   }
 
 }
+
+
+
 @media (max-width:991px){
   .hero-img{
     background-position: bottom;
   }
+  .padding {
+    padding: 0% 12%;
+}
+
+
 
   .openTab {
     transform: rotate(0deg);
