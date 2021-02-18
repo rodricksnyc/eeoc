@@ -77,6 +77,11 @@ p.blue{
   margin-bottom:.4em;
 }
 
+*:focus {
+  outline: none;
+}
+
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
@@ -119,7 +124,7 @@ p.blue{
 }
 
 .padding{
-    padding: 0% 22%;
+  padding: 0% 22%;
 }
 
 .main{
@@ -137,7 +142,7 @@ p.blue{
 
   max-height: 78rem;
   flex-direction: column;
-    justify-content: center;
+  justify-content: center;
 }
 
 .hero-img {
@@ -296,10 +301,10 @@ p.blue{
 .questionBox{
   margin-bottom: 1em;
   background: white;
-  padding: 1em .5em 1em .5em;
-  -webkit-box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-  box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
   display: flex;
   justify-content: center;
@@ -307,14 +312,25 @@ p.blue{
 
 }
 
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionBox .hidden{
+  display: flex;
+  justify-content: space-between;
+  display: none
+}
 
 .whiteBox{
   margin-bottom: 1em;
   background: white;
   padding: 1em;
-  -webkit-box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
-  box-shadow: 0px 0px 19px -1px rgb(175 175 175 / 67%);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -806,6 +822,200 @@ a.white:hover{
   text-decoration: underline;
 }
 
+.carousel legend {
+  font-size:20px !important;
+  font-weight:600 !important;
+  line-height: 1.3;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  color: darkgray;
+  text-align: center;
+  opacity: 1;
+  background: none !important;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+  color: darkgray;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel fieldset {
+  padding: 0;
+}
+
+.carousel .resp{
+  display: flex;
+  justify-content: center;
+}
+
+.beige{
+  background: #F1F0EC;
+  width: 2em;
+  border-radius: 50%;
+  height: 2em;
+
+}
+.carousel-control-prev .beige i {
+  font-size: 25px;
+  padding-top: 3px;
+  padding-right: 2px;
+}
+.carousel-control-next .beige i {
+  font-size: 25px;
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+
+.carousel-inner  input {
+  height: 18px;
+  left: 45%;
+  opacity: 0;
+  position: absolute;
+  top: 28px;
+  width: 18px;
+  z-index: 9999;
+
+}
+
+.carousel-inner label {
+  display: flex;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding-top: 1em;
+}
+
+.yes{
+  color:#088505
+}
+
+.no{
+  color:#9C001D
+}
+
+
+.yesBorder{
+  border: 3px solid #4FD311;
+  padding: 2em 5em;
+  border-radius: 1rem;
+
+}
+
+.yesBorder.backgroundColor{
+  background: rgb(8,133,5);
+  background: linear-gradient(38deg, rgba(8,133,5,1) 11%, rgba(79,211,17,1) 100%);
+
+}
+
+.noBorder.backgroundColor{
+  background: rgb(156,0,29);
+  background: linear-gradient(38deg, rgba(156,0,29,1) 11%, rgba(255,92,92,1) 100%);
+}
+.yesBorder.backgroundColor label, .noBorder.backgroundColor label{
+
+  color: white
+}
+.yesBorder.backgroundColor label.yes::before, .noBorder.backgroundColor label.no::before{
+  color:white
+}
+
+
+
+.noBorder{
+  border: 3px solid #FF5C5C;
+  padding: 2em 5em;
+  border-radius: 1rem;
+
+}
+
+.carousel-inner input + label.yes::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  color:#4FD311;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  width: 0rem;
+  font-size: 30px;
+  z-index: 0;
+}
+
+
+.carousel-inner input + label.no::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00d";
+  color:#FF5C5C;
+  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  width: 0rem;
+  font-size: 30px;
+  z-index: 0;
+}
+
+.carousel-inner .form-check-inline {
+  position: relative;
+  margin:2em 1em
+}
+
+.noContent:before{
+  content: "" !important;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.carousel-item{
+  height: 300px !important;
+  padding: 1em;
+
+}
+
+.carousel {
+  position: relative;
+  display: none;
+  border-top: 1px solid lightgray;
+}
+
+.questionBox.toggle{
+  padding-bottom:0em
+}
+
+.closeRadio{
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  font-size: 20px;
+
+}
+
+.closeRadio:hover, .questionBox:hover{
+  cursor: grab
+}
+
+.questionBox .hidden {
+  max-width: 90%;
+}
+
 
 footer .eeoc {
   max-width: 50% !important;
@@ -885,14 +1095,14 @@ footer h2 {
 
 
 @media (min-width:1201px) and (max-width:1400px){
-.container{
-width:70%;
-margin-left:15%;
-margin-right:15%;
-}
+  .container{
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+  }
 }
 
-@media (min-width:1025px) and (max-width:1200px){
+@media (min-width:1024px) and (max-width:1200px){
 
   .container {
     max-width: 700px;
@@ -1050,7 +1260,7 @@ margin-right:15%;
   }
   .padding {
     padding: 0% 12%;
-}
+  }
 
 
 
@@ -1312,6 +1522,44 @@ margin-right:15%;
 
 
 @media (max-width:767px){
+  
+  .circle {
+    position: absolute;
+    background: white;
+    opacity:.85;
+    border: solid 1px white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .carousel-item {
+    height: auto !important;
+    padding: 1em;
+  }
+  .carousel .resp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-check-inline {
+    display: block;
+  }
+
+  .carousel-inner input + label.no::before{
+    left:47%;
+  }
+
+  .carousel-inner .form-check-inline {
+    position: relative;
+    margin: 1em 1em;
+  }
+
+  .carousel legend {
+    font-size: 18px !important;
+  }
+
+
+
   .employers {
     max-width: 13em;
   }
@@ -1440,9 +1688,24 @@ margin-right:15%;
     padding: 0em 1em;
   }
   .navy {
-    font-size: 22px;
+    font-size: 20px;
 
   }
+
+  .questionBox i.orange {
+    font-size: 23px;
+  }
+
+  .questionBox i.blue {
+    font-size: 26px;
+
+  }
+
+
+  .carousel{
+    margin-top:-1em
+  }
+
   #slideOut .modal-content {
     width: 100vw;
   }
