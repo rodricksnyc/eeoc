@@ -1008,12 +1008,47 @@ a.white:hover{
 
 }
 
+.greenClose{
+  background: rgb(8,133,5);
+  background: linear-gradient(38deg, rgba(8,133,5,1) 11%, rgba(79,211,17,1) 100%);
+  color: black;
+  padding: .25rem 3rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-left: .5rem;
+}
+.clearClose{
+  border: 3px solid #909090;
+  color: black;
+  background: white;
+  padding: .25rem 6rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-right: .5rem;
+}
+
+
+
 .closeRadio:hover, .questionBox:hover{
   cursor: grab
 }
 
 .questionBox .hidden {
   max-width: 90%;
+}
+
+.black{
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  /* margin: .4em 0em; */
+  margin-bottom: 2em;
+  margin-top: .4em;
+
+}
+
+.required img{
+  max-width: 5em;
 }
 
 
@@ -1254,6 +1289,7 @@ footer h2 {
 
 
 
+
 @media (max-width:991px){
   .hero-img{
     background-position: bottom;
@@ -1261,8 +1297,6 @@ footer h2 {
   .padding {
     padding: 0% 12%;
   }
-
-
 
   .openTab {
     transform: rotate(0deg);
@@ -1430,6 +1464,9 @@ footer h2 {
     z-index: 99;
   }
 
+
+
+
   /* .side-menu-container .nav, .backButton{
   display: none;
   } */
@@ -1519,21 +1556,42 @@ footer h2 {
 
 }
 
-
+@media (min-width:768px){
+  .blueBackground{
+    background: #E1F3FB
+  }
+}
 
 @media (max-width:767px){
-  
-  .circle {
-    position: absolute;
-    background: white;
-    opacity:.85;
-    border: solid 1px white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+
+  .carousel-control-prev .beige i {
+    font-size: 30px;
+    padding-top: 0;
+    padding-right: 0;
+    font-weight: 500;
+    color:darkgray
   }
+  .carousel-control-next .beige i {
+    font-size: 30px;
+    padding-top: 0;
+    padding-left: 0;
+    font-weight: 500;
+    color:darkgray
+  }
+
+  .carousel-control-next, .carousel-control-prev{
+    width:15px;
+  }
+
+  .beige {
+    background: none;
+
+  }
+
+
   .carousel-item {
     height: auto !important;
+
     padding: 1em;
   }
   .carousel .resp {
@@ -1551,11 +1609,27 @@ footer h2 {
 
   .carousel-inner .form-check-inline {
     position: relative;
-    margin: 1em 1em;
+    margin: .5em 1em;
   }
 
   .carousel legend {
     font-size: 18px !important;
+  }
+
+  .carousel-inner input + label.yes::before,
+  .carousel-inner input + label.no::before {
+
+    top: 14px;
+    left: 45%;
+
+    font-size: 24px;
+    z-index: 0;
+  }
+
+  .yesBorder, .noBorder {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important;
+    padding: 1em 4em;
   }
 
 
@@ -1701,10 +1775,6 @@ footer h2 {
 
   }
 
-
-  .carousel{
-    margin-top:-1em
-  }
 
   #slideOut .modal-content {
     width: 100vw;

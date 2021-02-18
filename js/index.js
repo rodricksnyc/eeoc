@@ -472,7 +472,8 @@ $("#theform").validate(
     $('input:not(:checked)').parent().removeClass("backgroundColor");
     $('input:checked').parent().addClass("backgroundColor");
 
-
+    $('.beige').addClass('blueBackground')
+    $('.carousel-control-next, .carousel-control-prev').css('color', '#015CAB')
   }
 
   $('.form-check-inline').keypress(
@@ -518,7 +519,7 @@ $("#theform").validate(
   }
 
 
-  $('.closeRadio').keypress(
+  $('.closeRadio, .clearClose').keypress(
     closeToggle
 
   ).click(
@@ -552,20 +553,36 @@ $("#theform").validate(
   })
 
 
+
+
+
+
+  $('.next, .back').on("keyup", function (e) {
+
+
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 13) {
+
+		$('.questionBox .hidden .closeRadio').focus().css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+
+
   //special cursor on mobile
 
 
 
-  var mouseX = 0, mouseY = 0;
-  var xp = 0, yp = 0;
-
-  $(document).mousemove(function(e){
-    mouseX = e.pageX - 30;
-    mouseY = e.pageY - 30;
-  });
-
-  setInterval(function(){
-    xp += ((mouseX - xp)/6);
-    yp += ((mouseY - yp)/6);
-    $("#circle").css({left: xp +'px', top: yp +'px'});
-  }, 20);
+  // var mouseX = 0, mouseY = 0;
+  // var xp = 0, yp = 0;
+  //
+  // $(document).mousemove(function(e){
+  //   mouseX = e.pageX - 30;
+  //   mouseY = e.pageY - 30;
+  // });
+  //
+  // setInterval(function(){
+  //   xp += ((mouseX - xp)/6);
+  //   yp += ((mouseY - yp)/6);
+  //   $("#circle").css({left: xp +'px', top: yp +'px'});
+  // }, 20);
