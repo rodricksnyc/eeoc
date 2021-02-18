@@ -1564,6 +1564,28 @@ footer h2 {
 
 @media (max-width:767px){
 
+
+  .buttons{
+    flex-direction: column-reverse;
+  }
+  .clearClose{
+    margin:.5em 0em
+  }
+
+  .greenClose{
+    margin-left: 0rem;
+  }
+  .black {
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    /* margin: .4em 0em; */
+    margin-bottom: 1em;
+    margin-top: .4em;
+    text-align: center;
+    line-height: 1.3;
+}
+
   .carousel-control-prev .beige i {
     font-size: 30px;
     padding-top: 0;
