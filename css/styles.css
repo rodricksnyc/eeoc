@@ -82,9 +82,19 @@ p.blue{
 }
 
 
+::-webkit-scrollbar-thumb {
+	background-color: #9c9c9c;
+
+
+	border-radius: 1rem;
+}
+
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+	width: 9px !important;
+
+	border-radius: 1rem !important;
+	background: #dbdbdb !important;
+
 }
 
 .overflow-hidden {
@@ -676,7 +686,7 @@ p.blue{
 
 .focusClass input:focus + label::before {
   box-shadow: 0 0 0 3px black;
-  outline: 3px solid transparent; /* For Windows high contrast mode. */
+  outline: 3px solid transparent;
 }
 
 
@@ -1048,8 +1058,7 @@ a.white:hover{
 .greenClose{
   background: rgb(8,133,5);
   background: linear-gradient(38deg, rgba(8,133,5,1) 0%, rgba(79,211,17,1) 73%, rgba(92,223,30,1) 93%);
-  /* background: rgb(8,133,5);
-  background: linear-gradient(38deg, rgba(8,133,5,1) 11%, rgba(79,211,17,1) 100%); */
+
   color: black;
   padding: .25rem 3rem;
   border-radius: 2rem;
@@ -1065,8 +1074,6 @@ a.white:hover{
   font-weight: 600;
   margin-right: .5rem;
 }
-
-
 
 .closeRadio:hover, .questionBox:hover{
   cursor: grab
@@ -1354,9 +1361,8 @@ footer h2 {
   }
 
   .mobileToggle{
-    /* background: linear-gradient(259.11deg, #42B7E5 -7.67%, #015CAB 94.91%) !important; */
-    display: block;
 
+    display: block;
     color: white;
     font-size: 30px;
   }
@@ -1871,8 +1877,6 @@ footer h2 {
   .panel-body li {
     margin: .75em 0em;
   }
-
-
 
 }
 
