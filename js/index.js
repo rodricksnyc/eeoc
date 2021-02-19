@@ -82,7 +82,7 @@ if ($(document).innerWidth() > 1025 ) {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : '-5%'
+        'top' : '-8%'
       })
     }
     else {
@@ -560,13 +560,13 @@ $("#theform").validate(
   $('.next, .back').on("keyup", function (e) {
 
 
-	var code = (e.keyCode ? e.keyCode : e.which);
-	if (code == 13) {
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 13) {
 
-		$('.questionBox .hidden .closeRadio').focus().css('outline', 'dashed 3px #4599ff')
-	}
+      $('.questionBox .hidden .closeRadio').focus().css('outline', 'dashed 3px #4599ff')
+    }
 
-})
+  })
 
 
   //special cursor on mobile
