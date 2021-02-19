@@ -1877,6 +1877,12 @@ footer h2 {
 }
 
 
+@media (max-width:365px){
+  .padding {
+    padding: 0% 3%;
+  }
+}
+
 
 @media (max-width:325px){
   .side-menu-container {
@@ -1887,7 +1893,5 @@ footer h2 {
   .panel-body  li {
     margin: .5em 0em;
   }
-  .padding {
-    padding: 0% 6%;
-  }
+
 }
