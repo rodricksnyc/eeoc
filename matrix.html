@@ -145,40 +145,72 @@
 			<!-- survey form start -->
 
 			<form method="post" enctype="multipart/form-data">
-
 				<!-- please add survey-container div around all -->
+
 				<div class="survey-container">
-
 					<!-- please add survey-wrapper class to container class -->
-
 					<div class="container survey-wrapper">
 
 						<div id="survey">
 							<div class="" id="SB_1">
 								<div id="SB_2" class="fbpageitem">
-									<p>Welcome to the EEO-1 Component 1 Online Filing System.</p>
-									<p>First we need to determine if your company is already in the EEOC database. </p>
-									<fieldset class="q">
-										<legend displayorder="1" id="SB_5" number="" class="prompt">
-											Did you recently receive a postal letter or email that included a business ID and passcode?
-										</legend>
-										<div class="response">
-											<div><a name="existing"></a>
-												<div class="form-check">
-													<input type="radio" name="existing" value="1" class="form-check-input" id="existing_1">
-													<label id="lbl_existing_1" for="existing_1" class="form-check-label">Yes</label>
-												</div>
-												<div class="form-check">
-													<input type="radio" name="existing" value="2" class="form-check-input" id="existing_2">
-													<label id="lbl_existing_2" for="existing_2" class="form-check-label">No</label>
-												</div>
-											</div>
+									<p>REGISTERING A COMPANY</p>
+
+									<p>This registration is for the 2019 and/or 2020 reporting periods.  If you do not plan to submit reports for these years, do not continue.  If you are not sure if you have to file reports these years, answer the questions below to determine if the company is already registered or is required to file the EEO-1 report.</p>
+									<p>To fully complete the process, you will need the Company’s 9-digit Federal Tax ID/Employer Identification Number (EIN).</p>
+									<p>Note - all questions are mandatory:</p></div>
+									<div id="SB_4" class="fbpageitem">
+										<fieldset class="q">
+											<legend displayorder="1" id="SB_6" number="" class="prompt"></legend>
+											<div class="response">
+												<table role="presentation" class="
+												mx ">
+												<thead>
+													<tr>
+														<td class="col-6" style="text-align:left"></td>
+														<td id="SB_6_1">Yes </td>
+														<td id="SB_6_2">No </td>
+													</tr>
+												</thead>
+												<tbody><tr class="mx-row-alt">
+													<td align="top" class="
+													mx-question prompt " id="SB_10"><a name="A1"></a>Has the company ever filed the EEO-1 report in ANY previous year (data was last collected in the Spring 2019)?  This includes paper forms, data uploads, etc.</td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_10 SB_6_1" class="form-check-input " name="A1" value="1" id="A1_1"><label class="form-check-label" for="A1_1">Yes </label></td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_10 SB_6_2" class="form-check-input " name="A1" value="2" id="A1_2"><label class="form-check-label" for="A1_2">No </label></td>
+												</tr>
+												<tr class="mx-row">
+													<td align="top" class="
+													mx-question prompt " id="SB_11"><a name="A2"></a>Is the company owned by another U.S. based company or or co-owned by a Professional Employer Organization (PEO)? </td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_11 SB_6_1" class="form-check-input " name="A2" value="1" id="A2_1"><label class="form-check-label" for="A2_1">Yes </label></td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_11 SB_6_2" class="form-check-input " name="A2" value="2" id="A2_2"><label class="form-check-label" for="A2_2">No </label></td>
+												</tr>
+												<tr class="mx-row-alt">
+													<td align="top" class="
+													mx-question prompt " id="SB_12"><a name="A3"></a>Since January 1st of 2019, is your company a "spinoff" or "breakout" from another company that files the EEO-1 report?</td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_12 SB_6_1" class="form-check-input " name="A3" value="1" id="A3_1"><label class="form-check-label" for="A3_1">Yes </label></td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_12 SB_6_2" class="form-check-input " name="A3" value="2" id="A3_2"><label class="form-check-label" for="A3_2">No </label></td>
+												</tr>
+												<tr class="mx-row">
+													<td align="top" class="
+													mx-question prompt " id="SB_13"><a name="A4"></a>Are you a State or Local Government?  Elementary or Secondary School System or District?  Labor Union?</td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_13 SB_6_1" class="form-check-input " name="A4" value="1" id="A4_1"><label class="form-check-label" for="A4_1">Yes </label></td>
+													<td class="
+													radioclick form-check"><input type="radio" aria-labelledby="SB_13 SB_6_2" class="form-check-input " name="A4" value="2" id="A4_2"><label class="form-check-label" for="A4_2">No </label></td>
+												</tr>
+											</tbody></table>
 										</div>
 									</fieldset>
 								</div>
 							</div>
 						</div>
-
+			
 
 
 						<!-- please add buttonGroup class to this row and remove mt-5-->
@@ -188,7 +220,6 @@
 								<button class="btn btn-outline-secondary" name="SB_nb" value="MovePrev">
 									Back
 								</button>
-
 								<button class="btn btn-outline-primary" name="SB_nb" value="MoveNext">
 									Next
 								</button>
@@ -209,6 +240,8 @@
 			</form>
 
 			<!-- survey form end -->
+
+
 
 			<div class="back-to-top">
 				<i class="far fa-angle-up"></i>

@@ -1175,8 +1175,9 @@ footer h2 {
 }
 
 
-@media (min-width:1201px) and (max-width:1400px){
+@media (min-width:1201px) and (max-width:1550px){
   .container{
+
     width:70%;
     margin-left:15%;
     margin-right:15%;

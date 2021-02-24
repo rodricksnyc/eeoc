@@ -1,0 +1,680 @@
+
+
+
+#survey {
+  /*margin-left: 1em;*/
+  min-height: 300px;
+
+}
+
+
+/*
+Validation messages
+
+*/
+
+.sb-validation {
+  padding-left: .5em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  border-radius: .25rem;
+}
+
+.sb-validation-hard {
+  /* color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;*/
+  color: #790006;
+  background-color: #ffbaba;
+  border-color: #ebccd1;
+}
+
+.sb-validation-soft {
+  /*  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;*/
+  color: #603900;
+  background-color: #feefb3;
+  border-color: #faebcc;
+}
+
+/* BASE Question*/
+/* padding between questions*/
+.q {
+  margin-bottom: 2em;
+  /*margin-left: 1em;*/
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+
+
+.q-indicator {
+  margin-left: -1em;
+  float: left;
+  /*padding-left: 1em;*/
+  min-width: 1em;
+  font-weight: bold;
+  /*padding-right: .5em;*/
+  text-align: left;
+  display: none;
+}
+
+.q-symbol {
+  background-image: url('../play16.png');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+}
+
+/* general spacing between question text and response area*/
+.prompt, .prompt label {
+  padding: 0px 20px 5px 0px;
+  margin-top: .1em;
+  font-size: 16px;
+  font-weight: bold !important;
+}
+
+
+/* indent the response area with-in a question*/
+.response {
+  /* margin-top: .5em;*/
+  margin-left: .5em;
+  margin-right: .5em;
+  /*font-size: 14px;*/
+}
+
+
+/*------------------
+matrix questions
+
+mx= outer table
+mx-row and _alt is the TR within the table
+mx-qnumber: leading cell with qnumber, when present
+mx-question: cell with question text
+------------------------------*/
+.tbl, .mxplus, .mx {
+  width: 100%;
+  border: 1px solid rgba(0, 92, 170, 0.15);
+  margin-top: 5px;
+  background-color: #FFFFFF;
+}
+
+
+.tbl > thead > tr > th,
+.tbl > tbody > tr > th,
+.tbl > tbody > tr > td,
+.tbl > thead > tr > td {
+  border-bottom: 1px solid #ddd;
+  padding: .2em;
+}
+
+.tbl > thead > tr > th,
+.tbl > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+/* center the content cells*/
+.tbl tbody > tr > td,
+.mxplus tbody > tr > td,
+.mx tbody > tr > td {
+  text-align: center;
+  padding-bottom: .4em;
+  padding-top: .4em;
+
+}
+
+td.mx-question {
+  padding: 1em;
+  vertical-align: top;
+  /*font-weight: bold;*/
+  text-align: left !important;
+}
+
+/* matrix row header*/
+.tbl tbody > tr > th,
+.mxplus tbody > tr > th,
+.mx tbody > tr > th {
+  text-align: left;
+  padding: .5em .5em .5em .5em;
+  font-weight: normal;
+}
+/* column headers*/
+.tbl thead > tr > th,
+.mxplus thead > tr > th,
+.mxplus thead > tr > td,
+.mx thead > tr > td,
+.mx thead > tr > th {
+  text-align: center;
+  /*background-color: rgba(139, 197, 63, .1);*/
+  padding: .5em .5em .5em .5em;
+  vertical-align: bottom;
+  /** border-bottom: 1px solid rgb(0, 92, 170);
+  color: #005caa;*/
+  background-color: #E0E0E0;
+  font-weight: bold;
+}
+
+.mx-header-left {
+  text-align: left;
+}
+
+.tbl-row,
+.mxplus-row,
+.mx-row {
+  /*background-color: rgba(0, 92, 170, 0.05);*/
+  background-color: #f5f5f5;
+}
+
+.tbl-row-alt,
+.mxplus-row-alt,
+.mx-row-alt {
+}
+
+.mxplus-row-alt > td,
+.mxplus-row > td {
+  /*border-bottom-style:solid;*/
+
+}
+
+/* additional row in table for text boxes*/
+tr.mx-row-other {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0 !important;
+}
+/* cell in the row */
+td.mx-cell-other {
+  text-align: left !important;
+}
+
+
+
+
+.mx-qnumber {
+  vertical-align: top;
+  min-width: .75em;
+  text-align: right !important;
+  /*font-weight: bold;*/
+}
+
+/* spacer column id=spacer*/
+.mx-cell-leftborder, .mx-cell-spacer {
+  border-left-style: dashed;
+  border-left-width: thin;
+}
+
+.mx-cell-rightborder {
+  border-right-style: dashed;
+  border-right-width: thin;
+}
+
+
+.mxplus tbody > tr > td > label.radio {
+  display: inline;
+  padding-left: 0px;
+}
+
+.mx-col-7 {
+  width: 8.5%
+}
+.mx-col-6 {
+  width: 10%
+}
+.mx-col-5 {
+  width: 12%
+}
+.mx-col-4 {
+  width: 15%
+}
+.mx-col-3 {
+  width: 20%
+}
+.mx-col-2 {
+  width: 20%
+}
+/*disable off cell label*/
+.mxplus input[type='radio'], .mxplus input[type='checkbox'] {
+  margin-left: 0em;
+  float: none;
+}
+
+/*grouped radio buttons*/
+.optiongroup {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.optiongroupheader {
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+
+/* scale questions*/
+.scale {
+}
+
+/* center the content cells*/
+.scale thead > tr > th {
+  text-align: center;
+  padding: 0px;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ddd;
+}
+
+.scale tbody > tr > td {
+  text-align: center;
+  padding: 8px;
+}
+
+
+
+
+
+/*style applied to td elements of add-new row of table control*/
+.tbl-addnew {
+  background-color: #E8EFFC;
+}
+
+.tbl-addnew > td {
+  padding-top: 1em;
+  border-top: 1px double #CECECE;
+}
+
+/*style applied to div below table containing any buttons*/
+.tbl-btnbox {
+}
+
+.sbfile {
+  /*border: 1px solid #e7eaec;
+  background-color: #ffffff;*/
+  position: relative;
+  margin: .4em;
+  padding: .2em;
+  text-align: left;
+}
+
+.sbfile .icon i {
+  font-size: 40px;
+  color: #dadada;
+  float: left;
+  display: inline;
+  padding-right: .5em;
+}
+
+.sbfile a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sbfile .icon,
+.sbfile .image {
+  height: 100px;
+  overflow: hidden;
+}
+
+.sbfile .icon {
+}
+
+.sbfile .sbfile-name {
+  padding: .2em;
+  /* background-color: #f8f8f8;
+  border-top: 1px solid #e7eaec;*/
+  margin-top: .2em;
+}
+
+.sbfile-value {
+  /*height:100px;
+  border:2px black solid;*/
+  margin: auto;
+  position: relative;
+}
+
+.sbfile-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sbfile-control {
+}
+
+/* SB signature*/
+
+.sig {
+  padding: .2em;
+  /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sig > canvas {
+  display: block;
+  border-bottom: 2px solid #CECECE;
+  margin-bottom: .2em;
+  position: relative;
+}
+
+.sig > button.sig-start {
+  border: 2px solid #888;
+  display: block;
+  font-size: xx-large;
+}
+
+
+
+/*State settings*/
+div.sig-empty > canvas,
+div.sig-empty > button.sig-end,
+div.sig-empty > button.sig-cancel,
+div.sig-empty > button.sig-delete {
+  display: none;
+}
+/* signing*/
+div.sig-signing > button.sig-start,
+div.sig-signing > button.sig-delete {
+  display: none;
+}
+
+div.sig-signing > canvas {
+  border-bottom: 2px solid #036EB7;
+  border-top: 1px solid #CECECE;
+  border-left: 1px solid #CECECE;
+  border-right: 1px solid #CECECE;
+  background-color: #E8EFFC;
+  border-radius: 4px;
+}
+
+/* signed*/
+div.sig-signed > button.sig-start,
+div.sig-signed > button.sig-end,
+div.sig-signed > button.sig-cancel {
+  display: none;
+}
+
+div.sig-signed > canvas {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* msie */
+}
+
+.speaking {
+  background-color: #ffd800;
+}
+
+/*
+Meta data display
+
+*/
+.DEBUGBORDER {
+  border:dotted 2px solid green;
+
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 0px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+
+
+@media (min-width: 569px) {
+
+  /* undo's
+  --clear styles used on standard radio buttons that break the matrix when it's in table view*/
+  td.form-check {
+    display: table-cell;
+    padding-left: 0em;
+    vertical-align:top;
+  }
+
+  /*--end undo's*/
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: inherit;
+  }
+
+  .mx tbody > tr > td > label:hover {
+    border-style: none;
+    border-color: inherit;
+    background-color: inherit;
+  }
+
+  /* matrix row header*/
+  .mx tbody > tr > th {
+    text-align: left;
+    padding: .5em .5em .5em .5em;
+  }
+
+
+
+  /*turn off cell label*/
+  .mx tbody > tr > td > label {
+    display: none;
+  }
+
+  /* .mx tbody > tr > td > label.radio {
+  display: inline;
+  padding-left: 0px;
+  }*/
+
+
+  /*disable off cell label*/
+  .mx input[type='radio'],.mx input[type='checkbox'] {
+    margin-left: 0em;
+    float: none;
+  }
+
+
+
+  /*cell with no control*/
+  .mx-cell-hide {
+    /*background-color:green;*/
+  }
+  /*cell with disabled radio button*/
+  .mx-cell-disabled {
+    /*background-color:red;*/
+  }
+
+  .mx-cell {
+    text-align: center;
+  }
+
+
+
+  .masthead h1 {
+    vertical-align: middle;
+    padding: 1.7em 0em 0em 3em;
+    font-size: 22px;
+    font-weight: 800;
+  }
+}
+
+/*Fine tune padding and font sizes as the matrix table as the screen grows*/
+@media (min-width: 800px) {
+  .tbl thead > tr > th,
+  .mxplus thead > tr > th,
+  .mxplus thead > tr > td,
+  .mx thead > tr > td,
+  .mx thead > tr > th {
+
+    font-size: 11px;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .tbl thead > tr > th,
+  .mxplus thead > tr > th,
+  .mxplus thead > tr > td,
+  .mx thead > tr > td,
+  .mx thead > tr > th {
+    font-size: 14px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tbl thead > tr > th,
+  .mxplus thead > tr > th,
+  .mxplus thead > tr > td,
+  .mx thead > tr > td,
+  .mx thead > tr > th {
+    font-size: 16px;
+  }
+}
+
+
+
+/*
+http://stephen.io/mediaqueries/
+iPhone 5 Resolution
+Screen Width = 320px (CSS Pixels)   Screen Width = 640px (Actual Pixels)
+Screen Height = 568px (CSS Pixels)  Screen Height = 1136px (Actual Pixels)
+Device-pixel-ratio: 2
+
+iPhone 4/4S Resolution
+Screen Width = 320px (CSS Pixels)   Screen Width = 640px (Actual Pixels)
+Screen Height = 480px (CSS Pixels)  Screen Height = 960px (Actual Pixels)
+Device-pixel-ratio: 2
+
+iPhone 2G/3G/3GS Resolution
+Screen Width = 320px (CSS Pixels)   Screen Width = 320px (Actual Pixels)
+Screen Height = 480px (CSS Pixels)  Screen Height = 480px (Actual Pixels)
+
+
+*/
+
+@media (max-width: 569px) {
+
+
+  #survey {
+    /*margin-left: 1em;*/
+    min-height: 100px;
+  }
+
+  .mobile-only {
+    display: inherit;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+
+  /*matrix questions*/
+  /* turn off border
+
+  */
+  .mx {
+    border: none;
+  }
+
+  .mx tbody > tr {
+    margin-top: 1em;
+  }
+
+  /* column headers*/
+  .mx thead {
+    display: none;
+  }
+
+
+
+  .mx tbody > tr > td {
+    text-align: left;
+
+    border: none;
+  }
+
+  /* bold the question text remove padding*/
+  td.mx-question {
+    font-weight: bold;
+    border: none;
+    display: table-cell !important;
+    padding: 0em;
+  }
+
+  .mx-qnumber {
+    font-weight: bold;
+    border: none;
+    display: table-cell !important;
+  }
+
+  .mx-col-7 {
+    width: 100%
+  }
+
+  .mx-col-6 {
+    width: 100%
+  }
+
+  .mx-col-5 {
+    width: 100%
+  }
+
+  .mx-col-4 {
+    width: 100%
+  }
+
+  .mx-col-3 {
+    width: 100%
+  }
+
+  .mx-col-2 {
+    width: 100%
+  }
+
+  .mx-row, .mx-row-alt {
+    background-color: #FFFFFF;
+  }
+
+  .mx tr {
+    display: block;
+  }
+
+  .mx td {
+    display: block;
+  }
+  /*override column boder*/
+  .mx-cell-leftborder, .mx-cell-spacer {
+    border-left-style: none;
+  }
+
+
+  .mx-cell-rightborder {
+    border-right-style: none;
+  }
+
+
+
+}
+
+
+
+
+
+/* end sb styles*/

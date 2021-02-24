@@ -445,6 +445,19 @@ $("#theform").validate(
 
   })
 
+
+  $(".survey-container .form-check").on("keyup", function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 9) {
+      $('.form-check').each(function() {
+        $(this).addClass('focusClass')
+      });
+
+    }
+
+  })
+
   //end contact form
 
   //carousel radio buttons

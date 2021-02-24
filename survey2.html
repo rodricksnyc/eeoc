@@ -1,0 +1,284 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta content-type="text/plain" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>U.S. Equal Employment Opportunity Commission</title>
+  <link type="image/png" href="images/logo.png" rel="icon">
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/SB9.css">
+  <link rel="stylesheet" href="css/survey.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main overflow-hidden" id="overview">
+
+
+    <!-- header block start -->
+    <div class="container-fluid padding-0">
+      <header class="d-flex align-items-center">
+        <div class="hdr-container">
+          <a href="https://www.eeoc.gov/">
+            <img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo"></a>
+
+            <h1>U.S. Equal Employment<br>Opportunity Commission</h1>
+
+          </div>
+          <div class="end">
+            <i class="fal fa-briefcase orange"></i>
+            <h2 class="large ml-3 mb-0 mr-3">EEO-1</h2>
+          </div>
+        </header>
+      </div>
+      <!-- header block end -->
+
+      <!-- start contact form -->
+      <div id="slideOut" class="content-top">
+
+        <div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+          <p class="mb-0"><i class="fal fa-user-headset"></i><span class="tabText"> Have a Question?</span></p>
+
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="closeThisPlease" id="close">
+              <button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+
+                ✕
+
+              </button>
+            </div>
+
+
+            <h3>How to Contact Us</h3>
+
+          </div>
+          <div class="modal-body">
+
+            <form method="post" id="theform">
+              <p>The technical assistance helpdesk is available business day Monday-Friday from 8:00 am to 6:00 pm EST. You can reach the helpdesk by EMAIL or PHONE.</p>
+
+              <div class="form-group">
+                <label for="formControl1">Name</label>
+                <input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="formControl2">Email</label>
+                <input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+              </div>
+
+              <div class="form-group">
+                <fieldset>
+                  <legend>Reason for Contact</legend>
+                  <div class="around">
+
+                    <div class="form-check">
+                      <input type="radio" name="optradio" value="1" class="form-check-input required" tabindex="-1" id="val1" checked>
+                      <label for="val1" class="form-check-label">General Questions</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" name="optradio" value="2" class="form-check-input" tabindex="-1" id="val2">
+                      <label for="val2" class="form-check-label">Company Contact Changes</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="radio" name="optradio" value="3" class="form-check-input" tabindex="-1" id="val3">
+                      <label for="val3" class="form-check-label">Mergers</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="radio" name="optradio" value="4" class="form-check-input" tabindex="-1" id="val4">
+                      <label for="val4" class="form-check-label">Acquisitions</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="radio" name="optradio" value="5" class="form-check-input" tabindex="-1" id="val5">
+                      <label for="val5" class="form-check-label">Spin-Offs</label>
+                    </div>
+
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form-group">
+                <label for="formControl4">Message</label>
+                <textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4"></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <button type="submit" class="btn" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+              </div>
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- end contact form -->
+
+      <div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+        &#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+      </div>
+
+      <div class="contactUsOverlay"></div>
+
+
+      <!-- survey form start -->
+
+      <form method="post" enctype="multipart/form-data">
+        <!-- please add survey-container div around all -->
+
+        <div class="survey-container">
+          <!-- please add survey-wrapper class to container class -->
+          <div class="container survey-wrapper">
+
+            <div id="survey">
+              <div class="" id="SB_1">
+                <div id="SB_2" class="fbpageitem">
+                  <p>COMPANY EIN INFORMATION</p>
+                  <fieldset class="q">
+                    <legend displayorder="1" id="SB_5" number="" class="prompt">
+                      <div class="prompt">Please enter and re-enter the EIN for your Company (do not enter the dash): </div>
+                    </legend>
+                    <div class="response">
+                      <div>
+                        <a name="ein"></a>
+                        <label for="ein" class=" ">EIN:</label>
+                        <input id="ein" aria-required="true" placeholder="" type="text" class="form-control col-4" size="10" name="ein" value="" maxlength="9">
+                        <a name="confirm_ein"></a>
+                        <label for="confirm_ein" class=" ">Confirm EIN:</label>
+                        <input id="confirm_ein" aria-required="true" placeholder="" type="text" class="form-control col-4" size="10" name="confirm_ein" value="" maxlength="9">
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+      
+
+            <!-- please add buttonGroup class to this row and remove mt-5-->
+
+            <div class="row buttonGroup">
+              <div class="col">
+                <button class="btn btn-outline-secondary" name="SB_nb" value="MovePrev">
+                  Back
+                </button>
+                <button class="btn btn-outline-primary" name="SB_nb" value="MoveNext">
+                  Next
+                </button>
+              </div>
+
+              <div class="col">
+                <span class="badge badge-dark">102</span>
+                <button class="btn btn-outline-secondary" value="MoveSaveExit" name="SB_nb">
+                  Save &amp; Continue Later
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+      <!-- survey form end -->
+
+
+
+      <div class="back-to-top">
+        <i class="far fa-angle-up"></i>
+      </div>
+
+
+
+    </div>
+
+    <!-- <div class="bottom-pic">
+    <button class="btn clearButton">Need more help? Contact us.</button>
+  </div> -->
+
+
+
+  <!-- footer start -->
+
+  <footer>
+    <div class="footer-wrapper-top">
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-start align-items-center">
+          <img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
+
+          <h2>U.S. Equal Employment<br>Opportunity Commission</h2>
+
+        </div>
+
+        <div class="whiteLine"></div>
+        <div class="d-flex justify-content-between contact-footer">
+          <div>
+            <p class="white bold">EEOC Headquarters</p>
+            <p class="white">131 M Street, NE<br>Washington DC 20507<br>202-663-4900 / (TTY) 202-663-4494</p>
+          </div>
+          <div>
+            <p class="white bold">Questions?</p>
+            <p class="white">Call 1-800-669-4000<br>For Deaf/Hard of Hearing callers<br>1-800-669-6820 (TTY)<br>1-844-234-5122 (ASL Video Phone)<br><a class="white" href="mailto:info@eeoc.gov">info@eeoc.gov</a></p>
+          </div>
+          <div>
+            <p class="white bold">EEOC Headquarters</p>
+            <p class="white">
+              <a class="white" href="">Find your nearest EEOC office <i class="fal fa-external-link"></i></a><br><a class="white" href="">Frequently Asked Questions <i class="fal fa-external-link"></i></a><br><a class="white" href="">Sign up for email or text update <i class="fal fa-external-link"></i></a></p>
+              <p class="white bold">Connect with Us</p>
+              <div class="grid-container">
+                <i class="fab fa-facebook white"></i>
+                <i class="fab fa-twitter white"></i>
+                <i class="fab fa-youtube white"></i>
+                <i class="far fa-rss white"></i>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="footer-wrapper">
+        <a class="white" href="">FOIA <i class="fal fa-external-link"></i></a>
+        <a class="white" href="">Privacy Policy</a>
+        <a class="white" href="">Disclaimer</a>
+        <a class="white" href="">Accessibility</a>
+        <a class="white" href="">USA.gov <i class="fal fa-external-link"></i></a>
+        <a class="white" href="">Officer of Inspector General <i class="fal fa-external-link"></i></a>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+    <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+    <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+  </body>
+  </html>
