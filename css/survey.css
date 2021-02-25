@@ -60,10 +60,10 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  background-image: url(../images/container.png);
+  background-image: url(../images/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 
 }
 
@@ -212,8 +212,21 @@ fieldset {
   border: 1px solid #dedede;
 }
 .mx thead > tr > td {
-  background-color: #efefef;
+  background-color: #dcf1fa
 }
+.mx-row-alt {
+    background: #f6fbfe;
+}
+
+td {
+    color: #1A3966;
+}
+
+.mx-row {
+
+    background-color: #e9f7fc;
+}
+
 .response{
   margin-left: 0;
   margin-right: 0;
@@ -265,7 +278,7 @@ fieldset {
     color: #032960;
   }
   .mx thead > tr > td {
-    background-color: #efefef;
+
     padding-left: 0em;
     padding-right: 1em;
   }
