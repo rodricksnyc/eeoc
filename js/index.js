@@ -70,6 +70,33 @@ $('.collapse').on('hide.bs.collapse', function () {
 
 
 
+
+$('.sideBlock.panel a').on('click', function(e) {
+
+    $(this).toggleClass('flipThis')
+
+    if ($(this).hasClass('flipThis')) {
+
+      $(this).closest('li').find(".active").addClass('blueAdded')
+
+    }
+
+    if (!$(this).hasClass('flipThis')) {
+
+
+      $(this).closest('li').find(".active").stop().delay(300).queue(function () {
+        $(this).removeClass('blueAdded')
+
+      })
+
+    }
+
+
+  })
+
+
+
+
 //back to top
 
 

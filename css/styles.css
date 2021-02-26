@@ -1230,8 +1230,6 @@ footer h2 {
 }
 
 
-
-
 @media (min-width: 768px) and (max-width:1200px){
   .information  .order-md-2 {
     -ms-flex-order: 2;
@@ -1367,6 +1365,9 @@ footer h2 {
     border-top: 1px solid white !important;
 
   }
+
+li.active.blueAdded {
+    background: transparent !important;
 }
 
 
