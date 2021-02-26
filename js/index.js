@@ -25,13 +25,35 @@ $(".backButton").on('focusout', function() {
 })
 
 
+
+
+//active state for list items
+
+
+var pathMobile = window.location.href
+
+$('.side-menu-container .navbar-nav a').each(function() {
+  if (this.href === pathMobile) {
+    $(this).closest('li').addClass('active');
+  }
+  else {
+    $(this).closest('li').removeClass('active');
+  }
+
+  if ($('li.active').parent().parent().hasClass('panel-body')){
+    $('li.active').closest('.panel-collapse').addClass('show')
+    $('li.active').closest('.sideBlock').addClass('darkerBackground')
+
+
+  }
+
+});
+
+
 //rotate caret
 
 $('.collapse').on('show.bs.collapse', function () {
 
-  $(this).closest('.sideBlock').addClass('aquaBackground')
-
-  $(this).closest('.sideBlock').find('.borderShow').show()
 
   $('a[href="#' + this.id + '"] .caret-down').css({
     transform: "rotate(180deg)"
@@ -39,9 +61,6 @@ $('.collapse').on('show.bs.collapse', function () {
 
 });
 $('.collapse').on('hide.bs.collapse', function () {
-  $(this).closest('.sideBlock').find('.borderShow').hide()
-
-  $(this).closest('.sideBlock').removeClass('aquaBackground')
 
   $('a[href="#' + this.id + '"] .caret-down').css({
     transform: "rotate(0deg)"
@@ -76,7 +95,7 @@ function scrollfn(e) {
 
 
 
-if ($(document).innerWidth() > 1025 ) {
+if ($(document).innerWidth() > 1024 ) {
 
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
@@ -104,13 +123,13 @@ if ($(document).innerWidth() < 1025 ) {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : 'unset'
+        'top' : '12rem'
       })
     }
     else {
 
       $('.side-menu-container').css({
-        'top' : 'unset'
+        'top' : '16rem'
       })
 
     }
@@ -580,22 +599,3 @@ $("#theform").validate(
     }
 
   })
-
-
-  //special cursor on mobile
-
-
-
-  // var mouseX = 0, mouseY = 0;
-  // var xp = 0, yp = 0;
-  //
-  // $(document).mousemove(function(e){
-  //   mouseX = e.pageX - 30;
-  //   mouseY = e.pageY - 30;
-  // });
-  //
-  // setInterval(function(){
-  //   xp += ((mouseX - xp)/6);
-  //   yp += ((mouseY - yp)/6);
-  //   $("#circle").css({left: xp +'px', top: yp +'px'});
-  // }, 20);

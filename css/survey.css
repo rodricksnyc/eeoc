@@ -102,7 +102,7 @@ fieldset {
 
 }
 
-.buttonGroup .btn-outline-secondary:first-child {
+.buttonGroup .btn-outline-secondary {
   border: 2px solid #F15E2F;
   color: #1A3966;
   font-weight: 700;
@@ -110,28 +110,20 @@ fieldset {
   border-radius: 2rem;
   background: transparent;
   width: auto;
-
+  box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
+  -moz-box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
 }
 
-.buttonGroup .btn-outline-secondary:first-child:hover{
-  background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
+.buttonGroup .btn-outline-secondary:hover{
+  background: #FFF0E5;
+  border: 2px solid #FF8B3D;
 }
-
 .buttonGroup .btn-outline-secondary:last-child {
-  border: 2px solid #909090;
-  color: black;
-  font-weight: 700;
-  padding: .4rem 2.5rem;
-  border-radius: 2rem;
-  background: transparent;
   width: auto;
-
   float:right
 }
 
-.buttonGroup .btn-outline-secondary:last-child:hover{
-  background:#909090
-}
 
 .buttonGroup .btn-outline-primary {
   background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
@@ -140,13 +132,14 @@ fieldset {
   padding: .4rem 3rem;
   border-radius: 2rem;
   width: auto;
-
-
+  box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
+  -moz-box-shadow: 0px 0px 12px -4px rgba(223,106,21,0.75);
   border: 2px solid #F15E2F;
 }
 
 .buttonGroup .btn-outline-primary:hover{
-  background: transparent;
+  background: linear-gradient(84.72deg, #FF602E -40.14%, #FF8B3D 33.43%, #FFA970 100.73%);
 }
 
 .survey-container .form-check {
@@ -216,16 +209,16 @@ fieldset {
   background-color: #dcf1fa
 }
 .mx-row-alt {
-    background: #f6fbfe;
+  background: #f6fbfe;
 }
 
 td {
-    color: #1A3966;
+  color: #1A3966;
 }
 
 .mx-row {
 
-    background-color: #e9f7fc;
+  background-color: #e9f7fc;
 }
 
 .response{
