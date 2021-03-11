@@ -6,6 +6,15 @@
   }
 }
 
+@media (min-width: 1201px) and (max-width: 1550px) {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 
 .survey-wrapper {
   background: #ffffff;
@@ -19,7 +28,7 @@
 }
 
 
-.survey-container p:nth-of-type(1){
+.survey-container p.header{
 
   font-size: 2rem;
   color: black;
@@ -68,6 +77,23 @@
 
 }
 
+#datagrid{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#datagrid fieldset{
+  padding:0em 3em
+}
+
+.response.t.form-inline .form-group{
+
+  align-items: baseline !important;
+}
+
+.response.t.form-inline .form-group select{
+  margin:0em .5em !important
+}
 
 .survey-container label {
   display: inline-block;
@@ -174,7 +200,7 @@ fieldset {
   color: #032960;
 }
 
-.survey-container .form-check input + label::before {
+.survey-container .form-check input[type="radio"] + label::before {
   border: 1px solid #F15E2F;
   content: "";
   height: 18px;
@@ -186,7 +212,20 @@ fieldset {
   background: white;
 }
 
-.survey-container .form-check input + label::after {
+
+.survey-container .form-check input[type="checkbox"] + label::before {
+  border: 1px solid #F15E2F;
+  content: "";
+  height: 18px;
+  left: 3px;
+  position: absolute;
+  top: 9px;
+  width: 18px;
+  border-radius: 0;
+  background: white;
+}
+
+.survey-container .form-check input[type="radio"] + label::after {
   content: "";
   opacity: 0;
   border: 7px solid #032960;
@@ -196,6 +235,21 @@ fieldset {
   top: 11px;
   color: black;
   transition: opacity 0.2s ease-in-out;
+}
+
+
+.survey-container .form-check input[type="checkbox"] + label::after {
+  content: "\2713";
+  opacity: 0;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  color: black;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 20px;
+
 }
 
 .survey-container .form-check input:checked + label::after {

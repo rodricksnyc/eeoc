@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta content-type="text/plain" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>U.S. Equal Employment Opportunity Commission</title>
+	<link type="image/png" href="images/logo.png" rel="icon">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/SB9.css">
+	<link rel="stylesheet" href="css/survey.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="main overflow-hidden" id="overview">
+
+
+		<!-- header block start -->
+		<div class="container-fluid padding-0">
+			<header class="d-flex align-items-center">
+				<div class="hdr-container">
+					<a href="https://www.eeoc.gov/">
+						<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo"></a>
+
+						<h1>U.S. Equal Employment<br>Opportunity Commission</h1>
+
+					</div>
+					<div class="end">
+						<i class="fal fa-briefcase orange"></i>
+						<h2 class="large ml-3 mb-0 mr-3">EEO-1</h2>
+					</div>
+				</header>
+			</div>
+			<!-- header block end -->
+
+			<!-- start contact form -->
+			<div id="slideOut" class="content-top">
+
+				<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
+					<p class="mb-0"><i class="fal fa-user-headset"></i><span class="tabText"> Have a Question?</span></p>
+
+				</div>
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="closeThisPlease" id="close">
+							<button role="button" class="close" data-dismiss="modal" id="closeThisPlease" tabindex="-1" aria-hidden="false" style="opacity:1" aria-label="Close">
+
+								✕
+
+							</button>
+						</div>
+
+
+						<h3>How to Contact Us</h3>
+
+					</div>
+					<div class="modal-body">
+
+						<form method="post" id="theform">
+							<p>The technical assistance helpdesk is available business day Monday-Friday from 8:00 am to 6:00 pm EST. You can reach the helpdesk by EMAIL or PHONE.</p>
+
+							<div class="form-group">
+								<label for="formControl1">Name</label>
+								<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
+							</div>
+							<div class="form-group">
+								<label for="formControl2">Email</label>
+								<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
+							</div>
+
+							<div class="form-group">
+								<fieldset>
+									<legend>Reason for Contact</legend>
+									<div class="around">
+
+										<div class="form-check">
+											<input type="radio" name="optradio" value="1" class="form-check-input required" tabindex="-1" id="val1" checked>
+											<label for="val1" class="form-check-label">General Questions</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" name="optradio" value="2" class="form-check-input" tabindex="-1" id="val2">
+											<label for="val2" class="form-check-label">Company Contact Changes</label>
+										</div>
+
+										<div class="form-check">
+											<input type="radio" name="optradio" value="3" class="form-check-input" tabindex="-1" id="val3">
+											<label for="val3" class="form-check-label">Mergers</label>
+										</div>
+
+										<div class="form-check">
+											<input type="radio" name="optradio" value="4" class="form-check-input" tabindex="-1" id="val4">
+											<label for="val4" class="form-check-label">Acquisitions</label>
+										</div>
+
+										<div class="form-check">
+											<input type="radio" name="optradio" value="5" class="form-check-input" tabindex="-1" id="val5">
+											<label for="val5" class="form-check-label">Spin-Offs</label>
+										</div>
+
+									</div>
+								</fieldset>
+							</div>
+							<div class="form-group">
+								<label for="formControl4">Message</label>
+								<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4"></textarea>
+							</div>
+
+							<div class="d-flex justify-content-center mt-4">
+								<button type="submit" class="btn" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+							</div>
+
+						</form>
+
+					</div>
+					<div class="modal-footer">
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- end contact form -->
+
+			<div class="toast transparent-opacity" role="alert" aria-live="assertive" aria-atomic="true">
+				&#x2713; Thank you.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message sent successfully.
+			</div>
+
+			<div class="contactUsOverlay"></div>
+
+
+			<!-- survey form start -->
+
+			<form method="post" enctype="multipart/form-data">
+				<!-- please add survey-container div around all -->
+
+				<div class="survey-container">
+					<!-- please add survey-wrapper class to container class -->
+					<div class="container survey-wrapper">
+
+						<div id="survey">
+	  <div class="" id="SB_1">
+	    <div id="SB_2" class="fbpageitem">
+	      <fieldset class="q ">
+	        <legend displayorder="1" id="SB_4" number="" class="prompt">Please complete the form below to create your account</legend>
+	        <div class="response ">
+	          <div>
+	            <h2 displayorder="1" id="SB_7"></h2>
+	            <div displayorder="2" id="SB_8" class="form-group"><a name="Password"></a><label for="Password" class=" ">Password</label><input id="Password" aria-required="true" placeholder="" type="password" class="form-control col-3 " size="10" name="Password" value="" maxlength="50"><small displayorder="2" id="SB_10" class="form-text text-muted">Passwords must be at least 8 characters.<br>
+	Passwords must have at least one non alphanumeric character.<br>
+	Passwords must have at least one digit ('0'-'9').<br>
+	Passwords must have at least one lowercase letter ('a'-'z').<br>
+	Passwords must have at least one uppercase letter ('A'-'Z').<br>
+	</small></div><a name="ConfirmPassword"></a><label for="ConfirmPassword" class=" ">Confirm Password</label><input id="ConfirmPassword" placeholder="" type="password" class="form-control col-3 " size="10" name="ConfirmPassword" value="" maxlength="50"><div displayorder="4" id="SB_12" class="form-row">
+	              <div class="form-group col-md-6"><a name="FirstName"></a><label for="FirstName" class=" ">First Name </label><input id="FirstName" aria-required="true" placeholder="" type="text" class="form-control  " size="10" name="FirstName" value="" maxlength="50"></div>
+	              <div class="form-group col-md-6"><a name="LastName"></a><label for="LastName" class=" ">Last Name</label><input id="LastName" aria-required="true" placeholder="" type="text" class="form-control  " size="30" name="LastName" value="" maxlength="100"></div>
+	            </div>
+	            <div displayorder="5" id="SB_17" class="form-row">
+	              <div class="form-group col-md-6"><a name="Phone"></a><label for="Phone" class=" ">Telephone number (including Area Code)</label><input id="Phone" aria-required="true" placeholder="" type="text" class="form-control  " size="30" name="Phone" value="" maxlength="100"><a name="AcceptText"></a><div class="form-check"><input id="AcceptText" class="form-check-input   " type="checkbox" name="AcceptText" value="1"><label for="AcceptText" class="form-check-label ">Accept Text Messages</label></div>
+	              </div>
+	              <div class="form-group col-md-6"><a name="Title"></a><label for="Title" class=" ">Title </label><input id="Title" placeholder="" type="text" class="form-control  " size="30" name="Title" value="" maxlength="100"></div>
+	            </div><a name="aso"></a><div class="form-check"><input id="aso" class="form-check-input   " type="checkbox" name="aso" value="1"><label for="aso" class="form-check-label ">I am a member of an <i>Administrative Services Organization (ASO)</i> filing an EEO-1 report on behalf of a client</label></div>
+	          </div>
+	        </div>
+	      </fieldset>
+	      <fieldset class="q ">
+	        <legend displayorder="2" id="SB_38" number="" class="promptmt-3"> Address</legend>
+	        <div class="response col-md-8"><a name="Organization"></a><label for="Organization" class=" ">Organization </label><input id="Organization" aria-required="true" placeholder="" type="text" class="form-control  " size="30" name="Organization" value="" maxlength="100"><div class="form-group"><a name="Street1"></a><label for="Street1" class=" ">Street1</label><input id="Street1" aria-required="true" placeholder="" type="text" class="form-control  " size="30" name="Street1" value="" maxlength="100"><a name="Street2"></a><label for="Street2" class=" ">Street2</label><input id="Street2" placeholder="" type="text" class="form-control  " size="30" name="Street2" value="" maxlength="100"></div>
+	          <div displayorder="3" id="SB_30" class="form-row">
+	            <div class="form-group col-md-6"><a name="City"></a><label for="City" class=" ">City</label><input id="City" aria-required="true" placeholder="" type="text" class="form-control  " size="30" name="City" value="" maxlength="100"></div>
+	            <div class="form-group col-md-4"><a name="State"></a><label for="State" class=" ">State</label><select aria-required="true" class="form-control  " name="State" id="State" size="1"><option value="">Select One</option>
+	                <option value="AL">Alabama</option>
+	                <option value="AK">Alaska</option>
+	                <option value="AZ">Arizona</option>
+	                <option value="AR">Arkansas</option>
+	                <option value="CA">California</option>
+	                <option value="CO">Colorado</option>
+	                <option value="CT">Connecticut</option>
+	                <option value="DE">Delaware</option>
+	                <option value="DC">Disctrict of Columbia</option>
+	                <option value="FL">Florida</option>
+	                <option value="GA">Georgia</option>
+	                <option value="HI">Hawaii</option>
+	                <option value="ID">Idaho</option>
+	                <option value="IL">Illinois</option>
+	                <option value="IN">Indiana</option>
+	                <option value="IA">Iowa</option>
+	                <option value="KS">Kansas</option>
+	                <option value="KY">Kentucky</option>
+	                <option value="LA">Louisiana</option>
+	                <option value="ME">Maine</option>
+	                <option value="MD">Maryland</option>
+	                <option value="MA">Massachusetts</option>
+	                <option value="MI">Michigan</option>
+	                <option value="MN">Minnesota</option>
+	                <option value="MS">Mississippi</option>
+	                <option value="MO">Missouri</option>
+	                <option value="MT">Montana</option>
+	                <option value="NE">Nebraska</option>
+	                <option value="NV">Nevada</option>
+	                <option value="NH">New Hampshire</option>
+	                <option value="NJ">New Jersey</option>
+	                <option value="NM">New Mexico</option>
+	                <option value="NY">New York</option>
+	                <option value="NC">North Carolina</option>
+	                <option value="ND">North Dakota</option>
+	                <option value="OH">Ohio</option>
+	                <option value="OK">Oklahoma</option>
+	                <option value="OR">Oregon</option>
+	                <option value="PA">Pennsylvania</option>
+	                <option value="RI">Rhode Island</option>
+	                <option value="SC">South Carolina</option>
+	                <option value="SD">South Dakota</option>
+	                <option value="TN">Tennessee</option>
+	                <option value="TX">Texas</option>
+	                <option value="UT">Utah</option>
+	                <option value="VT">Vermont</option>
+	                <option value="VA">Virginia</option>
+	                <option value="WA">Washington</option>
+	                <option value="WV">West Virginia</option>
+	                <option value="WI">Wisconsin</option>
+	                <option value="WY">Wyoming</option></select></div>
+	            <div class="form-group col-md-2"><a name="Zip"></a><label for="Zip" class=" ">Zip</label><input id="Zip" aria-required="true" placeholder="" type="text" class="form-control  " size="5" name="Zip" value="" maxlength="15"></div>
+	          </div>
+	        </div>
+	      </fieldset>
+	      <fieldset class="q ">
+	        <legend displayorder="1" id="SB_40" number="" class="prompt">Standards and Rules of Behavior for the use of the U.S. Equal Employment Opportunity Commission (EEOC) EEO-1 data collection system.</legend>
+	        <div class="response ">
+	          <ol displayorder="1" id="SB_42">
+	            <li displayorder="1" id="SB_43"> Access to the EEO-1 is controlled. Requests for access must be justified based on job requirements. The system is to be used only for the purposes of filing your company's EEO-1 report(s) and the retrieval of EEO-1 reports filed in previous years.</li>
+	            <li displayorder="2" id="SB_44"> Accounts are provided to permit access only to authorized users for authorized purposes. Unauthorized use of a user account includes, but is not limited to: the use of a user account to access EEO-1 data by any person other than the authorized user; attempts to retrieve or modify information that is not your company's; and destruction or tampering with government information. Users shall not seek information on data, files or passwords belonging to others, or otherwise attempt to gain unauthorized access to EEOC systems.</li>
+	            <li displayorder="3" id="SB_45"> The system is only to be accessed using the procedures prescribed by the U.S. EEOC and only by using the login id and password provided by the U.S. EEOC.</li>
+	            <li displayorder="4" id="SB_46">  Any use of the system which disrupts the operation or use of the system is prohibited.</li>
+	            <li displayorder="5" id="SB_47">  Users shall not do any unauthorized security scanning, monitoring, or data interception, nor should they interfere with the conduct of security measures (such as anti-virus or auditing).</li>
+	            <li displayorder="6" id="SB_48">  Unauthorized access or use may be subject to civil and criminal penalties for computer fraud or abuse. If you suspect or become aware of unauthorized use or access, you must notify the U.S. Equal Employment Opportunity Commission IMMEDIATELY by telephone, 1.866.286.6440 (toll-free); or email: e1.techassistance@eeoc.gov.</li>
+	          </ol>
+	          <div><a name="rob"></a><div class="form-check"><input id="rob" class="form-check-input form-control-lg  " type="checkbox" name="rob" value="1"><label for="rob" class="form-check-label form-control-lg">I accept these conditions and will compy with these rules </label></div>
+	          </div>
+	        </div>
+	      </fieldset>
+	    </div>
+	  </div>
+	</div>
+
+
+
+						<!-- please add buttonGroup class to this row and remove mt-5-->
+
+						<div class="row buttonGroup">
+							<div class="col">
+								<button class="btn btn-outline-secondary" name="SB_nb" value="MovePrev">
+									Back
+								</button>
+								<button class="btn btn-outline-primary" name="SB_nb" value="MoveNext">
+									Next
+								</button>
+							</div>
+
+							<div class="col">
+								<span class="badge badge-dark">102</span>
+								<button class="btn btn-outline-secondary" value="MoveSaveExit" name="SB_nb">
+									Save &amp; Continue Later
+								</button>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</form>
+
+			<!-- survey form end -->
+
+
+
+			<div class="back-to-top">
+				<i class="far fa-angle-up"></i>
+			</div>
+
+
+
+		</div>
+
+		<!-- <div class="bottom-pic">
+		<button class="btn clearButton">Need more help? Contact us.</button>
+	</div> -->
+
+
+
+	<!-- footer start -->
+
+	<footer>
+		<div class="footer-wrapper-top">
+			<div class="d-flex flex-column">
+				<div class="d-flex justify-content-start align-items-center">
+					<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
+
+					<h2>U.S. Equal Employment<br>Opportunity Commission</h2>
+
+				</div>
+
+				<div class="whiteLine"></div>
+				<div class="d-flex justify-content-between contact-footer">
+					<div>
+						<p class="white bold">EEOC Headquarters</p>
+						<p class="white">131 M Street, NE<br>Washington DC 20507<br>202-663-4900 / (TTY) 202-663-4494</p>
+					</div>
+					<div>
+						<p class="white bold">Questions?</p>
+						<p class="white">Call 1-800-669-4000<br>For Deaf/Hard of Hearing callers<br>1-800-669-6820 (TTY)<br>1-844-234-5122 (ASL Video Phone)<br><a class="white" href="mailto:info@eeoc.gov">info@eeoc.gov</a></p>
+					</div>
+					<div>
+						<p class="white bold">EEOC Headquarters</p>
+						<p class="white">
+							<a class="white" href="">Find your nearest EEOC office <i class="fal fa-external-link"></i></a><br><a class="white" href="">Frequently Asked Questions <i class="fal fa-external-link"></i></a><br><a class="white" href="">Sign up for email or text update <i class="fal fa-external-link"></i></a></p>
+							<p class="white bold">Connect with Us</p>
+							<div class="grid-container">
+								<i class="fab fa-facebook white"></i>
+								<i class="fab fa-twitter white"></i>
+								<i class="fab fa-youtube white"></i>
+								<i class="far fa-rss white"></i>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="footer-wrapper">
+				<a class="white" href="">FOIA <i class="fal fa-external-link"></i></a>
+				<a class="white" href="">Privacy Policy</a>
+				<a class="white" href="">Disclaimer</a>
+				<a class="white" href="">Accessibility</a>
+				<a class="white" href="">USA.gov <i class="fal fa-external-link"></i></a>
+				<a class="white" href="">Officer of Inspector General <i class="fal fa-external-link"></i></a>
+			</div>
+		</footer>
+
+		<!-- footer end -->
+
+
+		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+	</html>

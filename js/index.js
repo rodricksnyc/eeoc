@@ -122,13 +122,35 @@ function scrollfn(e) {
 
 
 
-if ($(document).innerWidth() > 1024 ) {
+if ($(document).innerWidth() > 1250 ) {
 
   $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - .02*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : '-8%'
+        'top' : '0%'
+      })
+    }
+    else {
+
+      $('.side-menu-container').css({
+        'top' : '16rem'
+      })
+
+    }
+
+  });
+
+}
+
+
+if ($(document).innerWidth() > 1024 && $(document).innerWidth() < 1250 ) {
+
+  $(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - .05*$(document).height()) {
+
+      $('.side-menu-container').css({
+        'top' : '-37%'
       })
     }
     else {
@@ -150,7 +172,7 @@ if ($(document).innerWidth() < 1025 ) {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .01*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : '12rem'
+        'top' : '16rem'
       })
     }
     else {
@@ -433,6 +455,7 @@ $("#theform").validate(
   });
 
 
+
   $('#sendMessage').click(function (e) {
 
     if(!$('#formControl1').val() == '' && !$('#formControl2').val() == '' )    {
@@ -468,6 +491,11 @@ $("#theform").validate(
 
 
   });
+
+
+
+
+
 
   $('#theform input').keydown(function (event) {
     if(!$('#formControl1').val() == '' && !$('#formControl2').val() == '' )  {
