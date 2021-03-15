@@ -1800,6 +1800,10 @@ footer h2 {
     display: none;
   }
 
+  .card .caret-down{
+    display: inline-block;
+  }
+
   .accordion {
     position: unset;
   }
