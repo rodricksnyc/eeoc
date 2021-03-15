@@ -1801,8 +1801,23 @@ footer h2 {
   }
 
   .card .caret-down{
-    display: inline-block;
+    display: inline-flex;
+    position: absolute;
+    right: 13px;
+    transition: transform 0.3s;
+    font-size: 24px;
+    float: right;
+    color: black !important;
+    z-index: 12;
+    top: 18px;
   }
+
+  .card .card-header {
+    padding: 0em 2em .25em 0em
+
+  }
+
+
 
   .accordion {
     position: unset;
