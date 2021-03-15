@@ -145,7 +145,7 @@ p.blue{
 
 .main{
   min-height:120vh;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
   background: #F1F0EC;
 }
 
@@ -159,6 +159,18 @@ p.blue{
   max-height: 78rem;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero-img-container.small {
+    height: calc(100vh - 50rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 17rem;
+    max-height: 18rem;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .hero-img {
@@ -176,6 +188,17 @@ p.blue{
   max-height: 74rem;
   z-index:0
 }
+
+.hero-img.support{
+  background-image: url(../images/support-background.png);
+  background-position: bottom;
+}
+
+.hero-img.small{
+  background-image: url(../images/support-background.png);
+  background-position: bottom;
+}
+
 
 .accordion{
   position: relative;
@@ -266,6 +289,18 @@ p.blue{
   font-family: 'Oswald', sans-serif;
 }
 
+.hero-img-container h3 {
+  font-size: 45px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hero-img-container h4 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+}
+
 .orange-bottom::after{
   padding-top:20px;
   border-bottom:4px solid #F15E2F;
@@ -296,7 +331,7 @@ p.blue{
   color:#F15E2F;
 }
 
-.login{
+.login, .clearBtn{
   border: 3px solid #F15E2F;
   color:#F15E2F;
   font-weight:700;
@@ -304,10 +339,10 @@ p.blue{
   border-radius: 2rem;
   background: transparent;
   width:auto;
-  min-width:17rem
+  min-width:18rem
 }
 
-.login:hover{
+.login:hover, .clearBtn:hover{
   background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
   color:#041A39;
 }
@@ -408,6 +443,27 @@ p.blue{
   color:#595959
 }
 
+.topic{
+  background: #E9E6DD;
+  margin:2em 0em;
+  padding:1em 2em 2em 2em
+}
+
+.topic a {
+  color:#015CAB
+}
+
+.topic a:hover {
+  color:#015CAB;
+  text-decoration: underline;
+}
+
+
+.horizontal{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .questionBox{
   margin-bottom: 1em;
@@ -449,6 +505,58 @@ p.blue{
 
 }
 
+.card{
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card .card-header {
+  padding: 0em 0em .25em 0em;
+  margin-bottom: 0;
+  background-color: transparent !important;
+  border-bottom: none;
+  color: black;
+  font-weight: 600;
+  font-size:16px
+}
+
+.card .caret-down {
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3s;
+  font-size: 24px;
+  float: right;
+  color: black !important;
+  z-index: 12;
+
+}
+
+#accordion{
+  margin-bottom:6em
+}
+
+.whiteBox p.strong{
+
+  font-weight: 600;
+  font-size: 22px;
+  color:black
+}
+
+.faq a:hover {
+  text-decoration: none !important;
+}
+.faq .whiteBox p.strong{
+  font-size:17px
+}
+
 .bold{
   font-weight:700
 }
@@ -471,6 +579,14 @@ p.blue{
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.blueColor{
+  color: #015CAB;
+}
+
+.viewMore:hover{
+  cursor: pointer;
 }
 
 @keyframes shake {
@@ -1365,13 +1481,21 @@ footer h2 {
 }
 
 @media (max-width:1024px){
+  .hero-img-container.small {
+    height: calc(100vh - 66rem);
 
+    min-height: 15rem;
+    max-height: 20rem;
+
+  }
 
   .hero-img-container .offset-lg-1 {
     margin-left: 4.333333%;
   }
 
-
+  .topic {
+    padding: 1em 1em 2em 1em;
+  }
 
   .hero-img{
     background-position: top;
@@ -1487,6 +1611,10 @@ footer h2 {
 
 
 @media (max-width:991px){
+
+  .horizontal {
+    flex-direction: column;
+  }
   .user.loggedIn{
     font-size:0px !important;
 
@@ -1731,9 +1859,9 @@ footer h2 {
   .whiteLine{
     opacity:0
   }
-  .main {
-    padding-bottom: 5vh;
-  }
+  /* .main {
+  padding-bottom: 5vh;
+  } */
 
   .tabText{
     display:none
@@ -1825,6 +1953,17 @@ footer h2 {
 
   .topButtons .login{
     margin-left:0 !important
+  }
+
+  .clearBtn{
+    margin-right:0 !important;
+    margin-left:0 !important;
+    margin:.5em 0em !important
+  }
+
+  .hero-img-container .topButtons:nth-child(2n+1){
+    margin-top: 0rem!important;
+
   }
 
 

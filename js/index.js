@@ -24,6 +24,17 @@ $(".backButton").on('focusout', function() {
   $(this).find('.circle').css('outline', 'none')
 })
 
+$(".faq a").on("keyup", function (e) {
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
+		$(this).find('.whiteBox').css('outline', 'dashed 3px #4599ff')
+	}
+
+})
+$(".faq a").on('focusout', function() {
+	$(this).find('.whiteBox').css('outline', 'none')
+})
+
 
 
 
@@ -44,7 +55,9 @@ $('.side-menu-container .navbar-nav a').each(function() {
     $('li.active').closest('.panel-collapse').addClass('show')
     $('li.active').closest('.sideBlock').addClass('darkerBackground')
 
-
+    $('li.active').closest('.sideBlock').find('.caret-down').css({
+      transform: "rotate(180deg)"
+    });
   }
 
 });
@@ -77,15 +90,18 @@ $('.sideBlock.panel a').on('click', function(e) {
 
     if ($(this).hasClass('flipThis')) {
 
-      $(this).closest('li').find(".active").addClass('blueAdded')
+      $(this).closest('li').find(".active").css('background', 'transparent')
+
+      // $(this).closest('li').find(".active").addClass('blueAdded')
 
     }
 
     if (!$(this).hasClass('flipThis')) {
+      // $(this).closest('li').find(".active").css('background', 'transparent')
+      //
 
-
-      $(this).closest('li').find(".active").stop().delay(300).queue(function () {
-        $(this).removeClass('blueAdded')
+      $(this).closest('li').find(".active").stop().delay(400).queue(function () {
+        $(this).css('background' , '#09579A')
 
       })
 
@@ -128,7 +144,7 @@ if ($(document).innerWidth() > 1250 ) {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .02*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : '0%'
+        'top' : '-4%'
       })
     }
     else {
@@ -646,7 +662,6 @@ $("#theform").validate(
 
   $('.next, .back').on("keyup", function (e) {
 
-
     var code = (e.keyCode ? e.keyCode : e.which);
     if (code == 13) {
 
@@ -654,3 +669,31 @@ $("#theform").validate(
     }
 
   })
+
+//smooth scroll Topics
+
+$(".scrollIt").on("click", function(event) {
+	if (
+		location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+			&&
+			location.hostname === this.hostname
+		) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000, function() {
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) {
+						return false;
+					} else {
+						$target.attr('tabindex','-1');
+						$target.focus();
+					}
+				});
+			}
+		}
+	});
