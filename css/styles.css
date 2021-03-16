@@ -162,14 +162,14 @@ p.blue{
 }
 
 .hero-img-container.small {
-    height: calc(100vh - 50rem);
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 17rem;
-    max-height: 18rem;
-    flex-direction: column;
-    justify-content: center;
+  height: calc(100vh - 50rem);
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 17rem;
+  max-height: 18rem;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
@@ -259,7 +259,7 @@ p.blue{
   font-size: 15px;
 }
 
-.panel-body {
+.ten {
   padding-top: 10px;
 }
 
@@ -271,6 +271,7 @@ p.blue{
   float: right;
   color: black !important;
   z-index: 12;
+  top: 20px;
 }
 
 .side-menu-container li.sideBlock.lessPadding {
@@ -525,7 +526,7 @@ p.blue{
   border-bottom: none;
   color: black;
   font-weight: 600;
-  font-size:17px
+  font-size:18px
 }
 
 .card .caret-down {
@@ -537,6 +538,14 @@ p.blue{
   color: black !important;
   z-index: 12;
 
+}
+
+b{
+  font-weight:600
+}
+
+.card-body p {
+  margin-bottom:.4em
 }
 
 #accordion{
@@ -1011,6 +1020,8 @@ p.blue{
   right: 0px;
   top: -2px;
 }
+
+
 
 
 .bottom-pic {
@@ -1577,7 +1588,18 @@ footer h2 {
 }
 
 @media (min-width:992px){
-
+  .sideBlock a.opened{
+    background: #09579A;
+    border-radius: 1rem;
+    position: relative;
+    width: 128%;
+    left: -16px;
+    height: 35px;
+    top: -8px;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+  }
   .side-menu-container .panel-body li.active {
     background: #09579A;
     border-radius: 1rem;
@@ -1611,6 +1633,14 @@ footer h2 {
 
 
 @media (max-width:991px){
+
+  .panel-body{
+    padding-top: 10px;
+  }
+
+  .top.opened{
+    font-weight:700
+  }
 
   .horizontal {
     flex-direction: column;
