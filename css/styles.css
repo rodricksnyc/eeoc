@@ -544,8 +544,9 @@ b{
   font-weight:600
 }
 
-.card-body p {
-  margin-bottom:.4em
+.card-body p.card-ques {
+  margin-bottom:.25em;
+  font-size: 17px
 }
 
 #accordion{
