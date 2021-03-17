@@ -48,7 +48,7 @@
 			<div id="slideOut" class="content-top">
 
 				<div id="one" class="openTab" role="button" tabindex="0" aria-label="Contact">
-					<p class="mb-0"><i aria-hidden="true"class="fal fa-user-headset"></i><span class="tabText"> Have a Question?</span></p>
+					<p class="mb-0"><i aria-hidden="true" class="fal fa-user-headset"></i><span class="tabText"> Have a Question?</span></p>
 
 				</div>
 
@@ -63,68 +63,157 @@
 						</div>
 
 
-						<h3>How to Contact Us</h3>
+						<h3>Top FAQs</h3>
 
 					</div>
 					<div class="modal-body">
-
-						<form method="post" id="theform">
-							<p>The technical assistance helpdesk is available business day Monday-Friday from 8:00 am to 6:00 pm EST. You can reach the helpdesk by EMAIL or PHONE.</p>
-
-							<div class="form-group">
-								<label for="formControl1">Name</label>
-								<input id="formControl1" type="text" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="name" data-form-field="Name" required>
-							</div>
-							<div class="form-group">
-								<label for="formControl2">Email</label>
-								<input type="email" id="formControl2" class="form-control required secondOne mandatoryfields" tabindex="-1" aria-hidden="false" name="email" data-form-field="Email" required>
-							</div>
-
-							<div class="form-group">
-								<fieldset>
-									<legend>Reason for Contact</legend>
-									<div class="around">
-
-										<div class="form-check">
-											<input type="radio" name="optradio" value="1" class="form-check-input required" tabindex="-1" id="val1" checked>
-											<label for="val1" class="form-check-label">General Questions</label>
-										</div>
-										<div class="form-check">
-											<input type="radio" name="optradio" value="2" class="form-check-input" tabindex="-1" id="val2">
-											<label for="val2" class="form-check-label">Company Contact Changes</label>
-										</div>
-
-										<div class="form-check">
-											<input type="radio" name="optradio" value="3" class="form-check-input" tabindex="-1" id="val3">
-											<label for="val3" class="form-check-label">Mergers</label>
-										</div>
-
-										<div class="form-check">
-											<input type="radio" name="optradio" value="4" class="form-check-input" tabindex="-1" id="val4">
-											<label for="val4" class="form-check-label">Acquisitions</label>
-										</div>
-
-										<div class="form-check">
-											<input type="radio" name="optradio" value="5" class="form-check-input" tabindex="-1" id="val5">
-											<label for="val5" class="form-check-label">Spin-Offs</label>
-										</div>
+						<div id="tab-accordion">
+							<div class="card faq-list">
+								<a class="card-link card-header ques" data-toggle="collapse" href="#tab-one">
+									What is the EEO-1 Report?
+									<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+								</a>
+								<div id="tab-one" class="collapse" data-parent="#tab-accordion">
+									<div class="card-body ans">
+										The EEO-1 Component 1 Report is a compliance data collection mandated by Federal Statute and Regulations (Civil Rights Act of 1964, as amended). The data collection requires employers to report the number of employees categorized by race/ethnicity, gender and job category.
 
 									</div>
-								</fieldset>
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="formControl4">Message</label>
-								<textarea class="form-control" id="formControl4" tabindex="-1" aria-hidden="false" name="message" rows="4"></textarea>
+							<div class="card faq-list">
+								<a class="card-link card-header ques" data-toggle="collapse" href="#tab-two">
+									What is the EEO-1 filing deadline?
+									<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+								</a>
+								<div id="tab-two" class="collapse" data-parent="#tab-accordion">
+									<div class="card-body ans">
+										The filing deadline is typically three months after data collection launches. The 2019 and 2020 EEO-1 Data Collection is expected to launch in April 2021 and close in July 2021. The exact dates will be posted after data collection officially launches, and this FAQ will be updated.
+									</div>
+								</div>
 							</div>
 
-							<div class="d-flex justify-content-center mt-4">
-								<button type="submit" class="btn" id="sendMessage" tabindex="-1" aria-hidden="false">Submit</button>
+							<div class="card faq-list">
+								<a class="card-link card-header ques" data-toggle="collapse" href="#tab-three">
+									What companies are required to file the EEO-1 report?
+									<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+								</a>
+								<div id="tab-three" class="collapse" data-parent="#tab-accordion">
+									<div class="card-body ans">
+										The following companies are required to file the EEO-1 report annually:
+										<ol type="a">
+											<li>Private employers with 100 or more employees.</li>
+											<li>Federal government prime contractors or first-tier subcontractors subject to Executive Order 11246, as amended with both 50 or more employees and a prime contractor first-tier subcontract amounting to $50,000 or more.</li>
+											<li>Companies that serve as a depository of Government funds in any amount or is a financial institution which is an issuing and paying agent for U.S. Savings Bonds and Savings Notes and have 50 or more employees.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<div class="card faq-list">
+								<a class="card-link card-header ques" data-toggle="collapse" href="#tab-four">
+									Will companies need to file data for both 2019 and 2020 in April 2021?
+									<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+								</a>
+								<div id="tab-four" class="collapse" data-parent="#tab-accordion">
+									<div class="card-body ans">
+										Companies must file the EEO-1 report for each year they are in business and meet the filing requirements. In April 2021, eligible companies will be required to first file for 2019, then file for 2020 after the 2019 report is submitted.
+									</div>
+								</div>
+							</div>
+							<div class="card faq-list">
+								<a class="card-link card-header ques" data-toggle="collapse" href="#tab-five">
+									Can filers use login information from EEO-1 Component 2?
+									<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+								</a>
+								<div id="tab-five" class="collapse" data-parent="#tab-accordion">
+									<div class="card-body ans">
+										No. The Component 2 account information cannot be used to access the EEO-1 Component Online Filing System.  These are two different data collections, using distinct systems.
+									</div>
+								</div>
 							</div>
 
-						</form>
+							<a href="faq.html"><p class="viewMore text-center blueColor smallest mt-3 mb-3">View All</p></a>
+
+						</div>
+
+						<h3>Popular Fact Sheets</h3>
+
+						<div class="faq">
+
+
+							<a href="">
+								<div class="whiteBox">
+									<div class="d-flex flex-column">
+										<p class="strong mb-0">How to Update Contact Information</p>
+
+									</div>
+									<i aria-hidden="true" class="fal fa-file-pdf orange"></i>
+								</div>
+
+							</a>
+
+
+							<a href="">
+								<div class="whiteBox">
+									<div class="d-flex flex-column">
+										<p class="strong mb-0">How to get Ready to File</p>
+
+									</div>
+									<i aria-hidden="true" class="fal fa-file-pdf orange"></i>
+								</div>
+							</a>
+
+							<a href="">
+								<div class="whiteBox">
+									<div class="d-flex flex-column">
+										<p class="strong mb-0">Login Information</p>
+
+									</div>
+									<i aria-hidden="true" class="fal fa-file-pdf orange"></i>
+								</div>
+							</a>
+
+							<a href="">
+								<div class="whiteBox">
+									<div class="d-flex flex-column">
+										<p class="strong mb-0">How to Transition from PEO</p>
+
+									</div>
+									<i aria-hidden="true" class="fal fa-file-pdf orange"></i>
+								</div>
+							</a>
+
+
+							<a href="">
+								<div class="whiteBox">
+									<div class="d-flex flex-column">
+										<p class="strong mb-0">Mergers, Acquisitions, and Spinoffs</p>
+
+									</div>
+									<i aria-hidden="true" class="fal fa-file-pdf orange"></i>
+								</div>
+							</a>
+
+							<a href="fact-sheets.html"><p class="viewMore blueColor text-center smallest mt-3 mb-3">View All</p></a>
+
+						</div>
 
 					</div>
 					<div class="modal-footer">
+
+						<p class="text-center mt-3">Don’t see your answer? Try these:</p>
+
+						<div class="d-flex justify-content-around flex-wrap">
+
+							<a href=""><button class="btn clearBtn">Single Establishment</button></a>
+
+							<a href=""><button class="btn clearBtn">Multi Establishment</button></a>
+
+							<a href=""><button class="btn clearBtn">Instruction Booklet</button></a>
+
+						</div>
+
+						<div class="bottomBox"><p class="text-center mb-0">Not what you’re looking for? <a href="" class="teal">Contact Filer Support Team <i class="fal fa-user-headset"></i></a></p>
+						</div>
 
 					</div>
 

@@ -352,9 +352,6 @@ if ($(document).innerWidth() <= 767) {
 
 
 
-
-
-
 //contact form
 
 var contactChildren = $("#slideOut .modal-header [tabIndex], #slideOut .modal-body [tabIndex]").each(function() {

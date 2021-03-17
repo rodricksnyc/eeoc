@@ -102,6 +102,13 @@ p.blue{
 
 }
 
+
+#slideOut ::-webkit-scrollbar {
+  width: 0px !important;
+
+  background: transparent !important;
+}
+
 .overflow-hidden {
   overflow: hidden !important;
 }
@@ -716,12 +723,16 @@ b{
 
   height: 100%;
   margin: 0;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
+
   padding-bottom: 6em;
   opacity: 1;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+#slideOut .modal-body, #slideOut .modal-header{
+  padding-left: 1.2em !important;
+  padding-right: 1.2em !important;
 }
 
 #slideOut .modal-header {
@@ -731,15 +742,16 @@ b{
   display: block !important;
   padding-top: 2em;
 }
-#slideOut .modal-header h3{
+#slideOut h3{
   font-size: 20px;
   font-weight: 600;
   font-family: 'Oswald', sans-serif;
-  color:black
+  color:#1A3966;
+
 }
 #slideOut .modal-header .close {
   padding: 1rem;
-  margin: -2rem -2rem -1rem auto;
+  margin: -2rem -1rem -1rem auto;
   text-shadow: none;
 
 }
@@ -858,6 +870,59 @@ b{
 
 #slideOut fieldset {
   padding: 0em;
+}
+
+#slideOut .card .card-header{
+  width:90%;
+  font-size:17px;
+  line-height: 1.2
+}
+
+#slideOut .clearBtn {
+  border: 2px solid #F15E2F;
+  color: #F15E2F;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  background: transparent;
+  width: auto;
+  min-width: 12rem;
+  margin: .5em 0em;
+}
+#slideOut .clearBtn:hover {
+  background: #FFF0E5;
+  border: 2px solid #FF8B3D;
+}
+
+#slideOut .modal-footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0em !important;
+  border-top:1px solid #F15E2F;
+
+}
+
+#slideOut .card .caret-down{
+  top:unset;
+}
+
+.bottomBox{
+  background: rgba(196, 196, 196, 0.28);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  padding:1em;
+  margin-top: 1em;
+}
+
+.modal-footer>:not(:first-child) {
+  margin-left: 0;
+}
+
+.teal {
+  color:#0F7697
 }
 
 #sendMessage{
