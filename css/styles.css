@@ -1472,6 +1472,12 @@ footer h2 {
   .hero-img {
     max-height: 50rem;
   }
+
+
+.hero-img-container.small {
+    height: calc(100vh - 60rem)
+
+  }
 }
 
 
