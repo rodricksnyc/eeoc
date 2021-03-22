@@ -212,7 +212,7 @@ if ($(document).innerWidth() > 1024 && $(document).innerWidth() < 1250 ) {
     if($(window).scrollTop() + $(window).height() > $(document).height() - .05*$(document).height()) {
 
       $('.side-menu-container').css({
-        'top' : '-37%'
+        'top' : '-40%'
       })
     }
     else {

@@ -201,11 +201,31 @@ p.blue{
   background-position: bottom;
 }
 
+.hero-img.submit{
+  background-image: url(../images/submit-background.png);
+  background-position: bottom;
+}
+
+
 .hero-img.small{
   background-image: url(../images/support-background.png);
   background-position: bottom;
 }
 
+.hero-img.submit.small{
+  background-image: url(../images/submit-background.png);
+  background-position: center;
+}
+
+
+
+.noDecoration:hover{
+  text-decoration: none;
+}
+
+p{
+  color:black
+}
 
 .accordion{
   position: relative;
@@ -235,7 +255,7 @@ p.blue{
   filter: drop-shadow(0px 5px 20px rgba(209, 94, 57, 0.26));
   min-height: 4em;
   font-size: 16px !important;
-  min-width: 12em;
+  min-width: 13.6em;
   background: linear-gradient(240.33deg, #8BD3EF 14.67%, #42B7E5 84.02%);
 
 }
@@ -268,6 +288,11 @@ p.blue{
 
 .ten {
   padding-top: 10px;
+}
+
+.lightBlue{
+  color:#42B7E5;
+  font-size:3rem
 }
 
 .caret-down {
@@ -457,6 +482,11 @@ p.blue{
   padding:1em 2em 2em 2em
 }
 
+.topic.fourColumn .nav-link {
+  display: block;
+  padding: .5rem 0rem;
+}
+
 .topic a {
   color:#015CAB
 }
@@ -511,6 +541,21 @@ p.blue{
   justify-content: space-between;
   align-items: center;
 
+}
+
+.whiteLarge{
+
+  background: white;
+  padding: 2em 1.5em;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
+  position: relative;
+  margin:-4em 2em 1em 2em
+}
+
+.whiteLarge i {
+  font-size:2em
 }
 
 .card{
@@ -592,6 +637,13 @@ b{
 }
 
 .questionBox:hover .shake{
+  animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.whiteLarge:hover .shake{
   animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -1087,9 +1139,6 @@ b{
   top: -2px;
 }
 
-
-
-
 .bottom-pic {
   background-image: url(../images/person.png);
   background-repeat: no-repeat;
@@ -1102,6 +1151,12 @@ b{
   justify-content: center;
   align-items: center;
   min-height: 14rem;
+}
+
+.bottom-pic.submit{
+  background-image: url(../images/submit-people.png);
+  min-height: 12rem;
+  background-position: top;
 }
 
 .clearButton {
@@ -1474,7 +1529,7 @@ footer h2 {
   }
 
 
-.hero-img-container.small {
+  .hero-img-container.small {
     height: calc(100vh - 60rem)
 
   }
@@ -1494,17 +1549,27 @@ footer h2 {
 
 @media (min-width:1201px) and (max-width:1550px){
   .container{
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+}
 
-    width:70%;
-    margin-left:15%;
-    margin-right:15%;
+
+@media (min-width:1200px){
+  .paddingLeft{
+    padding: 1em 0em 1em 3em
+  }
+
+  .paddingRight{
+    padding: 1em 4em 1em 0em
   }
 }
 
 @media (min-width:1024px) and (max-width:1200px){
 
   .container {
-    max-width: 700px;
+    max-width: 640px;
   }
   .hero-img-container .offset-lg-1 {
     margin-left: 4.333333%;
@@ -1530,6 +1595,9 @@ footer h2 {
   .contractors {
     padding-top:2em
   }
+  .whiteLarge{
+    margin: -4em 0em 1em 0em;
+  }
 
 }
 
@@ -1541,6 +1609,8 @@ footer h2 {
     -ms-flex-order: 2;
     order: 1;
   }
+
+
 
 }
 
@@ -1616,7 +1686,7 @@ footer h2 {
   }
 
   .container {
-    max-width: 670px;
+    max-width: 650px;
   }
 
   .leftSide {
@@ -1655,6 +1725,13 @@ footer h2 {
   }
   .orange-bottom::after{
     padding-top: 15px;
+  }
+
+  .paddingRight{
+    padding: 1em 4em 1em 0em
+  }
+  .lightBlue {
+    font-size: 2.4rem;
   }
 
 }
@@ -1705,7 +1782,16 @@ footer h2 {
 
 
 @media (max-width:991px){
+  .lightBlue {
+    font-size: 2rem;
+  }
 
+  .paddingRight{
+    padding: 1em 1em 1em 0em
+  }
+  .whiteLarge {
+    margin: 3em 0em 0em 0em;
+  }
   .panel-body{
     padding-top: 10px;
   }
@@ -2045,6 +2131,20 @@ footer h2 {
     border: none;
     padding:0em;
     border-radius: 0rem;
+  }
+
+  .paddingLeft .col-sm-12 i, .paddingRight .col-sm-12 i {
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:.25em 0em .5em 0em;
+    font-size:2.5rem
+  }
+
+  .paddingLeft, .paddingRight{
+    padding:0em
   }
 
   .loggedIn .user-icon:after{

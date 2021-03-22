@@ -16,6 +16,7 @@
 }
 
 
+
 .survey-wrapper {
   background: #ffffff;
   position: relative;
@@ -322,7 +323,7 @@ td {
     float: none;
     margin-top: 1em;
   }
-  .survey-container p:nth-of-type(1){
+  .survey-container p.header{
     font-size:27px
   }
 
@@ -360,6 +361,7 @@ td {
   }
   .survey-container .mx .form-check label {
     padding: 0px;
+    font-size:0px !important
 
   }
 
