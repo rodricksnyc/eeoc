@@ -161,7 +161,7 @@ p.blue{
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 40rem;
+  min-height: 34rem;
 
   max-height: 78rem;
   flex-direction: column;
@@ -348,36 +348,41 @@ p{
 
 }
 
-.register{
+.register, .darkButton{
   background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
   color:#041A39;
   font-weight:700;
   padding:.5rem 2rem;
   border-radius: 2rem;
   width:auto;
-  min-width:17rem
+  min-width:18rem
 }
 
-.register:hover{
-  background: transparent;
-  border: 3px solid #F15E2F;
-  color:#F15E2F;
+.register:hover, .darkButton:hover{
+  background: linear-gradient(84.72deg, #FF602E -40.14%, #FF8B3D 33.43%, #FFA970 100.73%);
+
+  /* color:#F15E2F; */
 }
 
 .login, .clearBtn{
   border: 3px solid #F15E2F;
-  color:#F15E2F;
+  color:#FFAA70;
   font-weight:700;
   padding:.5rem 2rem;
   border-radius: 2rem;
-  background: transparent;
+  background: rgba(24, 39, 61, 0.6);
   width:auto;
   min-width:18rem
 }
 
 .login:hover, .clearBtn:hover{
-  background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
-  color:#041A39;
+  background: #FFF0E5;
+  border: 3px solid #FF8B3D;
+  color: #041A39;
+}
+
+.semiBold{
+  font-weight: 500;
 }
 
 .user{
@@ -482,11 +487,15 @@ p{
   padding:1em 2em 2em 2em
 }
 
-.topic.fourColumn .nav-link {
+.topic .nav-link {
+  display: block;
+  padding: .75rem 0rem;
+}
+.topic.booklet .nav-link {
   display: block;
   padding: .5rem 0rem;
+  min-height: 5rem;
 }
-
 .topic a {
   color:#015CAB
 }
@@ -532,7 +541,7 @@ p{
 .whiteBox{
   margin-bottom: 1em;
   background: white;
-  padding: 1em;
+  padding: 1em 1.5em;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   -moz-box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
   box-shadow: 0px 0px 19px -1px rgba(175,175,175,0.67);
@@ -1603,7 +1612,7 @@ footer h2 {
 
 @media (min-width:1025px){
   .side-menu-container{
-    top: 16rem;
+    top: 10.25rem;
   }
   .information  .order-md-2 {
     -ms-flex-order: 2;
@@ -1762,7 +1771,7 @@ footer h2 {
   }
 
   .darkerBackground{
-    background: linear-gradient(59.11deg, #42B7E5 -7.67%, #015CAB 94.91%) !important;
+    background: linear-gradient(259.11deg, #42B7E5 -7.67%, #015CAB 94.91%) !important;
   }
 
 
@@ -2475,6 +2484,10 @@ footer h2 {
     max-width: 50% !important;
     padding: .25rem 1rem !important;
     max-width: 100px !important;
+  }
+
+  .whiteBox{
+    padding: 1em .5em;
   }
 
 }
