@@ -1547,7 +1547,7 @@ footer h2 {
   display: none;
 }
 
-@media (min-height:1175px) and (min-width:1600px) {
+@media (min-height:1100px) and (min-width:1600px) {
   .hero-img-container {
       height: calc(100vh - 25rem);
 
@@ -1561,7 +1561,7 @@ footer h2 {
   }
 
   .hero-img-container.small {
-    height: calc(100vh - 50rem);
+    height: calc(100vh - 60rem);
     position: relative;
     display: flex;
     align-items: center;
@@ -1571,11 +1571,6 @@ footer h2 {
     margin-bottom: 5rem;
 }
 
-/* 
-  .hero-img-container.small {
-    height: calc(100vh - 60rem)
-
-  } */
 }
 
 
