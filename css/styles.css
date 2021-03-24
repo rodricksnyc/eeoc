@@ -2142,6 +2142,11 @@ footer h2 {
     border-radius: 0rem;
   }
 
+  .topic.booklet .nav-link {
+  
+    min-height: 0rem;
+}
+
   .paddingLeft .col-sm-12 i, .paddingRight .col-sm-12 i {
 
     flex: 0 0 100%;
