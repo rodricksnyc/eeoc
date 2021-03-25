@@ -169,24 +169,50 @@ p.blue{
 }
 
 .hero-img-container.navy{
-  background: #042A60
+  background: #042A60;
+  height: calc(100vh - 20rem);
+  position: relative;
+  display: flex;
+
+  min-height: 34rem;
+  max-height: 40rem;
+  flex-direction: unset;
+  justify-content: unset;
 }
 
-.background {
-  background-image: url(../images/background.jpg);
-  height: inherit;
-  min-height: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 100%;
-  width: 100%;
-  left: 0;
-  top: 0px;
+.background-1 {
+  background-image: url(../images/EEO1.png);
+  width: 46%;
+  /* left: 0; */
+  bottom: 0;
   position: absolute;
   left: 0;
-  max-height: 74rem;
-  z-index:0
+  max-height: 91rem;
+  z-index: 2;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 58rem;
+  top: 0;
 }
+
+.background-2 {
+  background-image: url(../images/EEO3.png);
+  width: 24%;
+  /* left: 0; */
+  bottom: 0;
+  position: absolute;
+  left: 38%;
+  max-height: 91rem;
+  z-index: 2;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 70rem;
+  top: 0%;
+
+}
+
 
 
 .hero-img-container.small {
@@ -469,10 +495,10 @@ p{
 
 
 .fa-briefcase{
-  font-size:45px;
+  /* font-size:45px;
   border: 2px solid #F15E2F;
   padding: .1em .2em;
-  border-radius: .4rem;
+  border-radius: .4rem; */
 
 }
 
@@ -1211,8 +1237,7 @@ b{
 
 .panel-body li:hover a{
   font-weight:600 !important
-  /* background: rgb(255,255,255);
-  background: linear-gradient(38deg, rgba(255,255,255,0.5018382352941176) 11%, rgba(255,255,255,0.5606617647058824) 100%); */
+
 }
 
 .semi-bold{
@@ -1466,6 +1491,379 @@ a.white:hover{
   max-width: 5em;
 }
 
+/* EEO1 page */
+
+.hoverEffect .grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  list-style: none;
+  text-align: center;
+  z-index: 99;
+
+}
+
+
+.hoverEffect .grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0%;
+  height: 600px;
+  width: 20%;
+  background: #042A60;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+figure h6.white{
+  margin-top: 2em;
+  font-size: 15px;
+}
+
+figure img{
+  height:auto;
+  /* min-height:600px; */
+}
+
+figure.activeState{
+  width:40% !important
+}
+
+figure.activeState p{
+  opacity:1 !important
+}
+
+
+figure.activeState h6.white{
+  margin-top: 1em;
+  font-size: 15px;
+}
+
+
+figure.activeState .hidden{
+  display: none
+}
+
+figure .hidden{
+  display: block
+}
+
+
+.hoverEffect figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+
+}
+
+.hoverEffect .grid figure figcaption {
+  padding: 0em;
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hoverEffect .grid figure figcaption::before,
+.hoverEffect .grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.hoverEffect .grid figure figcaption,
+.hoverEffect .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hoverEffect .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.hoverEffect .grid figure h2 {
+
+  font-weight: 500;
+  color:white;
+}
+
+
+.hoverEffect .grid figure h2,
+.hoverEffect .grid figure p {
+  margin: 0;
+}
+
+
+
+figure.effect-lily img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px,0, 0);
+  transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+  text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  height: 55%
+
+}
+
+figure.effect-lily .darkButton {
+  background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
+  color: #041A39;
+  font-weight: 700;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  width: auto;
+  min-width: 9rem;
+  margin-top: 2em;
+  display: none
+}
+
+figure.effect-lily .darkButton i{
+  font-size:16px;
+  font-weight: 600
+}
+
+figure.activeState .darkButton {
+  display: block
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-lily h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+  color: white;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:18px;
+  font-weight:300
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+  opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+
+.hoverEffect{
+  background: #042A60;
+  height: unset;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hoverEffect i{
+  font-size:28px;
+}
+.salmon{
+  font-size:18px;
+  color:#FFCEBE;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  margin-bottom:0em !important
+}
+
+.hoverEffect .scrollIt i {
+  font-size: 16px;
+}
+
+.image100{
+  background-image: url(../images/100.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10.5rem;
+}
+
+.people{
+  background-image: url(../images/people.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size:auto;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 36rem;
+  padding: 7% 10%
+}
+
+.tanBlock {
+  background: #F1F0EC;
+  position: relative;
+}
+
+.smaller{
+  font-size:18px !important
+}
+
+.tanBlock .rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0em 0em 0em 0em;
+}
+.tanBlock .leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 4em 0em 0em;
+}
+.tanBlock .orange-bottom::after {
+  margin: 0;
+}
+
+.people h2{
+  font-size: 60px;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+}
+@media (min-width:1025px){
+  .tanBlock .rightSide {
+    padding: 0em 6em 0em 0em;
+  }
+}
+
+
+
+@media (max-width:1024px){
+  .hoverEffect .grid figure {
+    width:50%;
+  }
+  figure.activeState{
+    width:50% !important
+  }
+  .hoverEffect .grid figure{
+    height:500px
+  }
+  figure img{
+    height:auto;
+    min-height:0px
+  }
+
+  figure.effect-lily figcaption > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 70%;
+  }
+
+  .tanBlock .row:nth-child(1){
+    margin-top:-2em
+  }
+
+  .people{
+    min-height: 0rem;
+    padding: 3% 10%;
+  }
+
+  .rightSide .text-center.large.mt-5.mb-4.orange-bottom{
+    margin-top:.5em !important
+  }
+
+  .rightSide .d-flex.mt-5, .rightSide .d-flex.mt-3{
+    margin-top:.5em !important
+  }
+  .leftSide .d-flex.mt-5 {
+    margin-top: 1rem!important;
+  }
+
+
+}
+
+
+@media (max-width:991px) and (min-width:768px){
+  .hoverEffect .grid figure {
+    height: 400px;
+  }
+
+  figure.effect-lily figcaption > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 80%;
+  }
+
+  .tanBlock .rightSide {
+    text-align: left;
+  }
+
+  .leftSide .d-flex.mt-5 {
+    margin-top: 2rem!important;
+  }
+
+  .people h2 {
+    font-size: 40px;
+
+  }
+  .tanBlock .img-fluid.right {
+    left: -20%;
+    position: relative;
+  }
+
+}
+
+
+/* end EEO1 styles */
 
 footer .eeoc {
   max-width: 50% !important;
@@ -1549,11 +1947,11 @@ footer h2 {
 
 @media (min-height:1100px) and (min-width:1600px) {
   .hero-img-container {
-      height: calc(100vh - 25rem);
+    height: calc(100vh - 25rem);
 
-      min-height: 27rem;
-      max-height: 78rem;
-      margin-bottom: 8em;
+    min-height: 27rem;
+    max-height: 78rem;
+    margin-bottom: 8em;
 
   }
   .hero-img {
@@ -1569,7 +1967,7 @@ footer h2 {
     max-height: 18rem;
 
     margin-bottom: 5rem;
-}
+  }
 
 }
 
@@ -2174,7 +2572,7 @@ footer h2 {
   .topic.booklet .nav-link {
 
     min-height: 0rem;
-}
+  }
 
   .paddingLeft .col-sm-12 i, .paddingRight .col-sm-12 i {
 

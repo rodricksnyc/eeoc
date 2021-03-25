@@ -740,3 +740,43 @@ $("#theform").validate(
         }
       }
     });
+
+//hover effects for EEO1
+
+
+
+
+
+var allStickyRels = $("figure.effect-lily");
+
+var firstChild = $("figure.effect-lily").first().addClass('activeState')
+
+$(allStickyRels).attr("tabIndex", "0")
+
+var closeAllStickyRels = function(){
+	for( i=0; i<allStickyRels.length; i++ ){
+		$(allStickyRels[i]).removeClass("activeState");
+	}
+}
+
+$("figure.effect-lily").mouseenter(function(){
+	if($(this).hasClass('activeState')) {
+		/* already open */
+	} else {
+		closeAllStickyRels();
+		$(this).addClass("activeState");
+	};
+});
+$("figure.effect-lily").focus(function(){
+	if($(this).hasClass('activeState')) {
+		/* already open */
+	} else {
+		closeAllStickyRels();
+		$(this).addClass("activeState");
+	};
+});
+
+$('.hoverEffect').mouseleave(function() {
+  var firstChild = $("figure.effect-lily").first().addClass('activeState')
+  $('figure.effect-lily').not(firstChild).removeClass("activeState");
+})
