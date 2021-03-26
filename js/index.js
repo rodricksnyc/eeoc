@@ -1,13 +1,13 @@
 //508 tabbing
 
-$("a, button, input, [tabIndex='0'], #one, .closeRadio").on("keyup", function (e) {
+$("a, button, input, [tabIndex='0'], #one, .closeRadio, .card-link").on("keyup", function (e) {
   var code = (e.keyCode ? e.keyCode : e.which);
   if (code == 9) {
     $(this).css('outline', 'dashed 3px #4599ff')
   }
 
 })
-$("a, button, input, [tabIndex='0'], #one, .closeRadio").on('focusout', function() {
+$("a, button, input, [tabIndex='0'], #one, .closeRadio, .card-link").on('focusout', function() {
   $(this).css('outline', 'none')
 })
 
@@ -108,7 +108,6 @@ $('.top').each(function() {
 
 $('.collapse').on('show.bs.collapse', function () {
 
-
   $('a[href="#' + this.id + '"] .caret-down').css({
     transform: "rotate(180deg)"
   });
@@ -182,8 +181,6 @@ function scrollfn(e) {
 }
 
 
-
-
 if ($(document).innerWidth() > 1250 ) {
 
   $(window).scroll(function() {
@@ -253,6 +250,8 @@ if ($(document).innerWidth() < 1025 ) {
 
 
 if ($(document).innerWidth() < 992 ) {
+
+  $('.hoverEffect').closest('body').find('header').addClass('EEO1')
 
   $('.panel-collapse').each(function() {
     $(this).removeClass('collapse').addClass('in')
@@ -354,14 +353,23 @@ if ($(document).innerWidth() <= 767) {
 
 //contact form
 
-var contactChildren = $("#slideOut .modal-header [tabIndex], #slideOut .modal-body [tabIndex]").each(function() {
+var contactChildren = $("#slideOut .modal-header [tabIndex], #slideOut .modal-body [tabIndex], #slideOut").each(function() {
   $(this).attr('tabindex', '-1')
 })
+
+
+var contactTabs = $("#slideOut a").each(function() {
+  $(this).attr('tabindex', '-1')
+
+})
+
+
 
 var open = function() {
 
   $('.contactUsOverlay').show();
-  $(contactChildren).attr('tabindex', '0')
+  $(contactChildren, contactTabs).attr('tabindex', '1')
+
 
   $('#theform input').each(function () {
     $(this).attr('tabindex', '0');
@@ -389,7 +397,7 @@ $('.contactUsOverlay').on('click', function(e) {
 
     $('.contactUsOverlay').hide()
 
-    $(contactChildren).attr('tabindex', '-1')
+    $(contactChildren, contactTabs).attr('tabindex', '-1')
     $('#theform input').each(function () {
       $(this).attr('tabindex', '-1');
     });
@@ -406,7 +414,7 @@ $('.contactUsOverlay').on('click', function(e) {
 var close = function() {
 
   $('.contactUsOverlay').hide();
-  $(contactChildren).attr('tabindex', '-1')
+  $(contactChildren, contactTabs).attr('tabindex', '-1')
   $('#theform input').each(function () {
     $(this).attr('tabindex', '-1');
   });
@@ -741,42 +749,42 @@ $("#theform").validate(
       }
     });
 
-//hover effects for EEO1
+    //hover effects for EEO1
 
 
 
 
 
-var allStickyRels = $("figure.effect-lily");
+    var allStickyRels = $("figure.effect-lily");
 
-var firstChild = $("figure.effect-lily").first().addClass('activeState')
+    var firstChild = $("figure.effect-lily").first().addClass('activeState')
 
-$(allStickyRels).attr("tabIndex", "0")
+    $(allStickyRels).attr("tabIndex", "0")
 
-var closeAllStickyRels = function(){
-	for( i=0; i<allStickyRels.length; i++ ){
-		$(allStickyRels[i]).removeClass("activeState");
-	}
-}
+    var closeAllStickyRels = function(){
+      for( i=0; i<allStickyRels.length; i++ ){
+        $(allStickyRels[i]).removeClass("activeState");
+      }
+    }
 
-$("figure.effect-lily").mouseenter(function(){
-	if($(this).hasClass('activeState')) {
-		/* already open */
-	} else {
-		closeAllStickyRels();
-		$(this).addClass("activeState");
-	};
-});
-$("figure.effect-lily").focus(function(){
-	if($(this).hasClass('activeState')) {
-		/* already open */
-	} else {
-		closeAllStickyRels();
-		$(this).addClass("activeState");
-	};
-});
+    $("figure.effect-lily").mouseenter(function(){
+      if($(this).hasClass('activeState')) {
+        /* already open */
+      } else {
+        closeAllStickyRels();
+        $(this).addClass("activeState");
+      };
+    });
+    $("figure.effect-lily").focus(function(){
+      if($(this).hasClass('activeState')) {
+        /* already open */
+      } else {
+        closeAllStickyRels();
+        $(this).addClass("activeState");
+      };
+    });
 
-$('.hoverEffect').mouseleave(function() {
-  var firstChild = $("figure.effect-lily").first().addClass('activeState')
-  $('figure.effect-lily').not(firstChild).removeClass("activeState");
-})
+    $('.hoverEffect').mouseleave(function() {
+      var firstChild = $("figure.effect-lily").first().addClass('activeState')
+      $('figure.effect-lily').not(firstChild).removeClass("activeState");
+    })

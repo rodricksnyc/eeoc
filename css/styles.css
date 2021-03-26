@@ -1720,12 +1720,13 @@ figure.effect-lily:hover p {
   width: 100%;
   height: auto;
   position: relative;
-  background-size: 100%;
+  background-size: cover;
   z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 10.5rem;
+  background-position: center;
 }
 
 .people{
@@ -1734,7 +1735,7 @@ figure.effect-lily:hover p {
   width: 100%;
   height: auto;
   position: relative;
-  background-size:auto;
+  background-size:cover;
   z-index: 0;
   display: flex;
   flex-direction: column;
@@ -1743,12 +1744,17 @@ figure.effect-lily:hover p {
   padding: 7% 10%
 }
 
+
+.tanBlock .people .orange-bottom::after{
+  margin: 0 auto;  
+}
+
 .tanBlock {
   background: #F1F0EC;
   position: relative;
 }
 
-.smaller{
+.smallest{
   font-size:18px !important
 }
 
@@ -1773,13 +1779,34 @@ figure.effect-lily:hover p {
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
 }
+
+.tanBlock .lightBlue {
+
+  width: 0em;
+  margin-right: 1.4em;
+}
+
 @media (min-width:1025px){
   .tanBlock .rightSide {
     padding: 0em 6em 0em 0em;
   }
 }
 
+@media (max-width:1200px){
+  .rightSide .text-center.large.mt-5.mb-4.orange-bottom{
+    margin-top:.5em !important
+  }
 
+  .rightSide .d-flex.mt-5, .rightSide .d-flex.mt-3{
+    margin-top:.5em !important
+  }
+  .leftSide .d-flex.mt-5 {
+    margin-top: 1rem!important;
+  }
+  .image100{
+    min-height:8rem
+  }
+}
 
 @media (max-width:1024px){
   .hoverEffect .grid figure {
@@ -1802,7 +1829,7 @@ figure.effect-lily:hover p {
     left: 0;
     padding: 1em;
     width: 100%;
-    height: 70%;
+    height: 80%;
   }
 
   .tanBlock .row:nth-child(1){
@@ -1811,7 +1838,7 @@ figure.effect-lily:hover p {
 
   .people{
     min-height: 0rem;
-    padding: 3% 10%;
+    padding: 5% 10%;
   }
 
   .rightSide .text-center.large.mt-5.mb-4.orange-bottom{
@@ -1825,13 +1852,58 @@ figure.effect-lily:hover p {
     margin-top: 1rem!important;
   }
 
+  figure.effect-lily p{
+    opacity:1
+  }
+  figure.activeState .hidden {
+    display: block;
+  }
+  figure.activeState h6.white {
+    margin-top: 2em;
+    font-size: 15px;
+  }
+
+  .tanBlock .rightSide {
+
+    padding: 0em 5em 0em 0em;
+  }
+
+  figure .darkButton {
+    display: block;
+  }
+
+
 
 }
 
 
 @media (max-width:991px) and (min-width:768px){
   .hoverEffect .grid figure {
-    height: 400px;
+    height: 460px;
+  }
+
+  .EEO1 h1 {
+    display: none;
+  }
+
+  .EEO1 .large {
+    margin-top: -10px;
+  }
+  .tanBlock img.right, .tanBlock img.left{
+    display: none
+  }
+  .tanBlock .rightSide{
+    padding:0em 3em 3em 3em !important;
+    text-align: left;
+  }
+
+  .tanBlock .leftSide{
+    padding:0em 3em 3em 3em !important;
+    text-align: left;
+  }
+  .people {
+    min-height: 0rem;
+    padding: 2em 4em;
   }
 
   figure.effect-lily figcaption > div {
@@ -1840,7 +1912,11 @@ figure.effect-lily:hover p {
     left: 0;
     padding: 1em;
     width: 100%;
-    height: 80%;
+    height: 92%;
+  }
+
+  figure .darkButton {
+    display: block;
   }
 
   .tanBlock .rightSide {
@@ -1853,13 +1929,94 @@ figure.effect-lily:hover p {
 
   .people h2 {
     font-size: 40px;
+    margin-bottom: 1em;
 
   }
   .tanBlock .img-fluid.right {
-    left: -20%;
+    left: 0;
     position: relative;
+    width: 100%;
+  }
+  .lightBlue {
+    width: 0em;
+    margin-right: 1.5em;
   }
 
+}
+
+@media (max-width:767px){
+
+  .people h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+  figure.effect-lily p {
+    -webkit-transform: translate3d(0,0px,0);
+    transform: translate3d(0,0px,0);
+  }
+
+  .tanBlock img.right, .tanBlock img.left{
+    display: none
+  }
+
+  .tanBlock .rightSide{
+    padding:1em 3em 3em 3em !important;
+    text-align: left;
+  }
+
+  .tanBlock .leftSide{
+    padding:1em 3em 3em 3em !important;
+    text-align: left;
+  }
+
+  .EEO1 .end {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    margin-right: 3em;
+  }
+
+  .EEO1 .large {
+    color: #015CAB;
+    font-size: 24px;
+    margin-right: .25em !important;
+  }
+  .EEO1 .hdr-container{
+    margin:0em 0em
+  }
+  .EEO1  .user{
+    width:auto;
+    max-width:2em
+  }
+
+  .EEO1{
+    justify-content:space-between;
+  }
+
+  .EEO1 .eeoc {
+    max-width: 50% !important;
+    padding: .25rem 1rem !important;
+    max-width: 90px !important;
+  }
+  .hoverEffect .grid figure {
+    height: auto;
+    width: 100% !important;
+    max-height: 420px;
+    min-height: 400px;
+  }
+  figure.effect-lily figcaption > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .lightBlue {
+    font-size: 1.8rem;
+    width: 8%;
+    margin-right: 4%;
+  }
 }
 
 
@@ -2046,8 +2203,6 @@ footer h2 {
     order: 1;
   }
 
-
-
 }
 
 
@@ -2132,8 +2287,8 @@ footer h2 {
   .bottom-pic{
     height: 14em;
     background-size: cover;
+    background-position: bottom;
   }
-
 
   .hero-img-container {
     height: auto;
@@ -2248,7 +2403,11 @@ footer h2 {
   }
 
   .user-icon{
-    font-size:25px
+    font-size:inherit
+  }
+
+  .data-logo {
+    width: 2.2em;
   }
 
   .loggedIn .user-icon:after {
