@@ -1734,7 +1734,7 @@ figure.effect-lily:hover p {
   z-index: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   min-height: 36rem;
   padding: 7% 10%
 }
@@ -1948,7 +1948,7 @@ figure.effect-lily:hover p {
       color: #1A3966;
       font-size: 18px;
   }
-  
+
   .people h2 {
     font-size: 32px;
     margin-bottom: 1em;
