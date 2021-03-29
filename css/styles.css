@@ -1504,7 +1504,6 @@ a.white:hover{
 
 }
 
-
 .hoverEffect .grid figure {
   position: relative;
   float: left;
@@ -1525,7 +1524,6 @@ figure h6.white{
 
 figure img{
   height:auto;
-  /* min-height:600px; */
 }
 
 figure.activeState{
@@ -1592,7 +1590,6 @@ figure .hidden{
 }
 
 .hoverEffect .grid figure h2 {
-
   font-weight: 500;
   color:white;
 }
@@ -1602,8 +1599,6 @@ figure .hidden{
 .hoverEffect .grid figure p {
   margin: 0;
 }
-
-
 
 figure.effect-lily img {
   max-width: none;
@@ -1746,7 +1741,7 @@ figure.effect-lily:hover p {
 
 
 .tanBlock .people .orange-bottom::after{
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .tanBlock {
@@ -1764,6 +1759,10 @@ figure.effect-lily:hover p {
   align-items: flex-start;
   padding: 0em 0em 0em 0em;
 }
+.tanBlock img.right{
+  width:100%
+}
+
 .tanBlock .leftSide {
   display: flex;
   flex-direction: column;
