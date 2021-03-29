@@ -1944,7 +1944,11 @@ figure.effect-lily:hover p {
 }
 
 @media (max-width:767px){
-
+  .tanBlock p.blue {
+      color: #1A3966;
+      font-size: 18px;
+  }
+  
   .people h2 {
     font-size: 32px;
     margin-bottom: 1em;
