@@ -1333,25 +1333,25 @@ b{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 14rem;
+  min-height: 12rem;
 }
 
 .bottom-pic.submit{
   background-image: url(../images/submit-people.png);
-  min-height: 12rem;
+  min-height: 10rem;
   background-position: top;
 }
 
 
 .bottom-pic.EEO1{
   background-image: url(../images/eeo1-footer.png);
-  min-height: 11rem;
+  min-height: 9rem;
   background-position: top;
 }
 
 .bottom-pic.support{
   background-image: url(../images/support-footer.png);
-  min-height: 12rem;
+  min-height: 10rem;
   background-position: top;
 }
 
