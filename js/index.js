@@ -59,9 +59,9 @@ $('.sideBlock a').each(function() {
   if (this.href === links) {
     $(this).closest('li').addClass('active');
   }
-  else {
-    $(this).closest('li').removeClass('active');
-  }
+  // else {
+  //   $(this).closest('li').removeClass('active');
+  // }
 
   if ($('li.active').parent().parent().hasClass('panel-body')){
     $('li.active').closest('.panel-collapse').addClass('show')
@@ -74,7 +74,6 @@ $('.sideBlock a').each(function() {
     $('li.active').closest('.sideBlock').find('.panel-body').addClass('ten')
 
   }
-
 
 
 });
@@ -788,3 +787,48 @@ $("#theform").validate(
       var firstChild = $("figure.effect-lily").first().addClass('activeState')
       $('figure.effect-lily').not(firstChild).removeClass("activeState");
     })
+
+//eye toggle
+
+
+
+function show() {
+  var p = $('#AccessCode');
+  p.attr('type', 'text');
+}
+
+function hide() {
+  var p = $('#AccessCode');
+  p.attr('type', 'password');
+}
+
+
+var pwShown = 0;
+
+var togglepwd = function() {
+
+  if (pwShown == 0) {
+    pwShown = 1;
+    show();
+
+    $("#eye").replaceWith('<i id="eye" class="fas fa-eye-slash" aria-hidden="true"></i>');
+
+
+
+
+  } else {
+    pwShown = 0;
+    hide();
+
+    $("#eye").replaceWith('<i id="eye" class="far fa-eye" aria-hidden="true"></i>');
+
+  }
+
+}
+
+$('#togglepwd, .togglePassword').keypress(
+  togglepwd
+
+).click(
+  togglepwd
+);

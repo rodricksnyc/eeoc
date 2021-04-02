@@ -6,6 +6,105 @@ html{
   overflow-x: hidden;
 }
 
+
+.survey-container.filing {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.landing-panel {
+  z-index: 2;
+  width: 80%;
+  margin:0% 10%;
+  margin: 0px auto 0px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0px;
+  padding: 35px 25px 0px 25px;
+  position: relative;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.landing-panel .grayLine{
+  border-top:1px solid #efefef
+}
+
+.landing-panel label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0em;
+
+}
+.form-control.access {
+  font-size: 14px;
+
+  margin-bottom: 12px;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #F15E2F !important;
+  border-radius: 0em;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.landing-panel .checkbox label {
+  margin: 5px 0px;
+  font-size: 10px;
+  font-weight: 300;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 0.375em;
+}
+
+.landing-panel .link{
+  float:right;
+  font-size:14px;
+  color:#015CAB;
+}
+
+label.togglePassword {
+  display: flex;
+  align-items: center;
+}
+
+#eye, #eye2 {
+  margin-right: 4px;
+  font-size: 18px;
+  color: #003D7E;
+}
+
+.landing-panel .checkbox label input {
+  display: none;
+}
+.landing-panel .checkbox label input {
+  display: none;
+}
+
+.landing-panel .darkButton {
+  background: linear-gradient(84.72deg, #E5422A -40.14%, #FF602E 32.64%, #FF8B3D 110.12%);
+  color: #041A39;
+  font-weight: 700;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  width: auto;
+  min-width: 9rem;
+}
+
+
 header {
   background-color: #F4F3F0;
   position: relative;
@@ -103,11 +202,19 @@ p.blue{
 }
 
 
-#slideOut ::-webkit-scrollbar {
-  width: 0px !important;
-
-  background: transparent !important;
+.navySmall{
+  color:#1A3966;
+  font-size:16px;
 }
+
+
+
+
+/* #slideOut ::-webkit-scrollbar {
+width: 0px !important;
+
+background: transparent !important;
+} */
 
 .overflow-hidden {
   overflow: hidden !important;
@@ -144,6 +251,14 @@ p.blue{
   height: 52px;
   margin-right: 3rem;
   margin-left: 1rem;
+}
+
+.flip2 {
+  background: #015CAB;
+  width: 1px;
+  height: 11px;
+  margin-top: 4px;
+
 }
 
 .padding{
@@ -428,8 +543,20 @@ p{
   color: #041A39;
 }
 
+.navyBackground{
+  background: rgba(24, 39, 61, 0.2);
+  padding:.25em .5em;
+  color:#FFE7D7
+}
+
 .semiBold{
   font-weight: 500;
+}
+
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
 }
 
 .user{
@@ -832,9 +959,9 @@ b{
   height: 100%;
   margin: 0;
 
-  padding-bottom: 6em;
+
   opacity: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -1167,7 +1294,7 @@ b{
 }
 
 .white {
-  color:white;
+  color:white !important;
 }
 
 .leftSide{
@@ -1211,6 +1338,19 @@ b{
 
 .bottom-pic.submit{
   background-image: url(../images/submit-people.png);
+  min-height: 12rem;
+  background-position: top;
+}
+
+
+.bottom-pic.EEO1{
+  background-image: url(../images/eeo1-footer.png);
+  min-height: 11rem;
+  background-position: top;
+}
+
+.bottom-pic.support{
+  background-image: url(../images/support-footer.png);
   min-height: 12rem;
   background-position: top;
 }
@@ -1945,8 +2085,25 @@ figure.effect-lily:hover p {
 
 @media (max-width:767px){
   .tanBlock p.blue {
-      color: #1A3966;
-      font-size: 18px;
+    color: #1A3966;
+    font-size: 18px;
+  }
+
+  .landing-panel {
+
+    width: 100%;
+    margin:0% 0%;
+
+  }
+
+  .landing-panel .grayLine{
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .flip2{
+    display: none
   }
 
   .people h2 {
