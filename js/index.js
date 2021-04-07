@@ -753,7 +753,6 @@ $("#theform").validate(
 
 
 
-
     var allStickyRels = $("figure.effect-lily");
 
     var firstChild = $("figure.effect-lily").first().addClass('activeState')

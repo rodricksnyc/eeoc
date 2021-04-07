@@ -15,12 +15,15 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 
+
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+
 
 	<div class="main overflow-hidden" id="overview">
 
@@ -104,7 +107,7 @@
 							</div>
 						</li>
 
-						<li class="sideBlock"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
+						<li class="sideBlock active"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
 
 					</ul>
 				</div>
@@ -297,152 +300,240 @@
 			<div class="contactUsOverlay"></div>
 
 
-			<div class="survey-container filing">
+			<div class="filing small">
 
-				<!-- please add survey-wrapper class to container class -->
 
 				<div class="container pt-5 pb-5">
 
-					<h2 class="text-center medium mt-3 mb-3">Welcome to the EEO-1 Component 1 online filing system used to collect filer data.</h2>
-					<p class="navySmall">Enter Username and Password to get started with your data submission for EEO-1. The Username is the email address of the registered user. If you don’t have a username and password or do not have a company ID and passcode to enter then visit the new filer registration.</p>
-					<p class="navySmall mb-5"><b>PAPERWORK REDUCTION ACT INFORMATION</b>: Public reporting burden for this collection of information is estimated to average 5 hours per submission. Send comments concerning this burden estimate or any other aspect of this collection of information to the Equal Employment Opportunity Commission Office of Enterprise Data and Analytics, 131 M Street, NE Room SW30F, Washington, D.C. 20507. According to the Paperwork Reduction Act of 1995, an agency may not conduct or sponsor, and a person is not required to respond to a collection of information unless it displays a valid OMB control number. The OMB control number for this information collection is 3046-0007.</p>
+					<h2 class="text-center medium mt-3 mb-3 navy orange-bottom">Update My Profile</h2>
 
 
-					<div class="landing-panel">
+				</div>
 
-						<form role="form"  method="POST">
+			</div>
+
+
+			<div class="container pb-5 pt-3">
+
+				<h2 class="text-center large mt-5"><i class="fal fa-user orange"></i>&nbsp;&nbsp;<span class="userName">Andrew Heller</span></h2>
+
+
+				<div class="landing-panel clearBackground">
+
+					<form role="form"  method="POST">
+											
 						<div class="form-signin">
-							<a class="link" href="">Forgot Username?</a>
-							<label for="MainContent_txtAccessCode2">Username</label>
-							<input name="ctl00$MainContent$txtAccessCode2" type="username" maxlength="50" size="8" id="MainContent_txtAccessCode2" placeholder="email address" class="form-control access">
-							<label for="MainContent_txtAccessCode1" id="MainContent_Label1" class="form-signin-heading">Password</label>
-							<div class="position-relative form-signin-input">
-									<a class="link" href="">Forgot Password?</a>
-								<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="AccessCode" class="form-control access" placeholder="i.e. 1234" autocomplete="false">
-								<div class="checkbox">
-									<label class="togglePassword" tabindex="0" aria-hidden="false" aria-label="Show/Hide Passcode">
-										<i id="eye" class="far fa-eye" aria-hidden="true"></i>
 
-										<input id="togglepwd" type="checkbox" value="1">
+							<div class="form-row">
 
-									</label>
+								<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+									<label for="title">Title</label>
+									<input name="ctl00$MainContent$txtAccessCode2" type="text" size="8" id="title" placeholder="" class="form-control access">
+								</div>
+							</div>
+
+							<div class="form-row">
+
+								<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+									<label for="email">Email</label>
+									<input name="ctl00$MainContent$txtAccessCode2" type="email" size="8" id="email" placeholder="" class="form-control access">
+								</div>
+							</div>
+
+							<div class="form-row">
+
+								<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+									<label for="company">Company</label>
+									<input name="ctl00$MainContent$txtAccessCode2" type="text" size="8" id="company" placeholder="" class="form-control access">
+
+								</div>
+							</div>
+
+							<div class="form-row">
+
+								<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+
+									<label for="address">Street Address</label>
+									<input name="ctl00$MainContent$txtAccessCode2" type="text" size="8" id="address" placeholder="" class="form-control access">
+
+								</div>
+							</div>
+
+							<div class="form-row">
+
+								<div class="col-sm-12 col-md-6">
+
+									<label for="city">City</label>
+									<input id="city" type="text" class="form-control access">
+
+								</div>
+
+								<div class="col-sm-12 col-md-3">
+
+									<label for="state">State</label>
+									<select id="state" class="custom-select form-control access">
+										<option selected="selected">Select</option>
+										<option value="AK">AK</option>
+										<option value="AL">AL</option>
+										<option value="AR">AR</option>
+										<option value="AS">AS</option>
+										<option value="AZ">AZ</option>
+										<option value="CA">CA</option>
+										<option value="CO">CO</option>
+										<option value="CT">CT</option>
+										<option value="DC">DC</option>
+										<option value="DE">DE</option>
+										<option value="FL">FL</option>
+										<option value="FM">FM</option>
+										<option value="GA">GA</option>
+										<option value="GU">GU</option>
+										<option value="HI">HI</option>
+										<option value="IA">IA</option>
+										<option value="ID">ID</option>
+										<option value="IL">IL</option>
+										<option value="IN">IN</option>
+										<option value="KS">KS</option>
+										<option value="KY">KY</option>
+										<option value="LA">LA</option>
+										<option value="MA">MA</option>
+										<option value="MD">MD</option>
+										<option value="ME">ME</option>
+										<option value="MH">MH</option>
+										<option value="MI">MI</option>
+										<option value="MN">MN</option>
+										<option value="MO">MO</option>
+										<option value="MP">MP</option>
+										<option value="MS">MS</option>
+										<option value="MT">MT</option>
+										<option value="NC">NC</option>
+										<option value="ND">ND</option>
+										<option value="NE">NE</option>
+										<option value="NH">NH</option>
+										<option value="NJ">NJ</option>
+										<option value="NM">NM</option>
+										<option value="NV">NV</option>
+										<option value="NY">NY</option>
+										<option value="OH">OH</option>
+										<option value="OK">OK</option>
+										<option value="OR">OR</option>
+										<option value="PA">PA</option>
+										<option value="PR">PR</option>
+										<option value="PW">PW</option>
+										<option value="RI">RI</option>
+										<option value="SC">SC</option>
+										<option value="SD">SD</option>
+										<option value="TN">TN</option>
+										<option value="TX">TX</option>
+										<option value="UT">UT</option>
+										<option value="VA">VA</option>
+										<option value="VI">VI</option>
+										<option value="VT">VT</option>
+										<option value="WA">WA</option>
+										<option value="WI">WI</option>
+										<option value="WV">WV</option>
+										<option value="WY">WY</option>
+
+									</select>
+
+								</div>
+
+								<div class="col-sm-12 col-md-3">
+
+									<label for="zip">Zip</label>
+									<input id="zip" type="text" class="form-control access">
+
 								</div>
 
 							</div>
 
-							<div class="d-flex justify-content-center mt-3 mb-3">
-							<a href=""><button class="btn darkButton">Begin</button></a>
 
+
+
+							<div class="d-flex justify-content-center align-items-center mt-5 mb-5 buttonGroup">
+								<button class="btn btn-outline-primary mr-1">Confirm</button>
+								<button class="btn btn-outline-secondary ml-1">Cancel</button>
 							</div>
 
+
+
 						</div>
+
+
+
 					</form>
 
-						<div class="d-flex justify-content-center mt-4 mb-3 pb-2 pt-2 grayLine">
-							<a href="" class="blueColor small mb-0 mr-1">Never Filed Before or New Business?</a>
-							<div class="flip2"></div>
-
-							<a href="" class="blueColor small mb-0 ml-1">Enter Company ID & Passcode?</a>
-
-						</div>
+				</div>
 
 
-					</div>
 
-					<p class="navySmall text-center mb-0 mt-5"><b>OMB Control Number: 3046-0007<br>Expiration Date: 06/30/2023</b></p>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="back-to-top">
+			<i aria-hidden="true"class="far fa-angle-up"></i>
+		</div>
+
+
+		<!-- footer start -->
+
+		<footer>
+			<div class="footer-wrapper-top">
+
+				<div class="d-flex justify-content-start align-items-center">
+					<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
+
+					<h2>U.S. Equal Employment<br>Opportunity Commission</h2>
+
+				</div>
+
+				<div>
+					<p class="white bold">EEOC Headquarters</p>
+					<p class="white"><i aria-hidden="true" class="fal fa-map-marker-alt"></i> 131 M Street, NE<br><span class="pl-3">Washington DC 20507</span></p>
+				</div>
+				<div>
+					<p class="white bold">Report a Change to Your Company </p>
+					<p class="white"><a class="white" href="">Company Contact Change<br><a class="white" href="">Merger</a><br><a class="white" href="">Acquisitions</a><br><a class="white" href="">Spinoff</a></p>
+				</div>
+				<div>
+					<p class="white bold">Need assistance?</p>
+					<p class="white">
+						<a class="white" href="">Visit the Filer Support Center</a>
+					</p>
+
+					<p class="white bold">Contact Us</p>
+
+					<p class="white"><a class="white" href="mailto:FilerSupport@EEOCdata.org"><i aria-hidden="true" class="fal fa-envelope"></i> FilerSupport@EEOCdata.org</a><br><a class="white" href="tel:855-336-2035"><i aria-hidden="true" class="fal fa-phone"></i> 855-EEOC-035 (855-336-2035)</a></p>
 
 
 				</div>
 
 
-				<div class="container-fluid padding-0">
-					<div class="blueBlock">
-						<div class="container pt-5 pb-5">
-							<h2 class="text-center white medium mt-3 mb-3">Privacy and Security</h2>
-							<p class="white">This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes (1) this computer network, (2) all computers connected to this network, and (3) all devices and storage media attached to this network or to a computer on this network.</p>
-							<p class="white">This system is provided for Government-authorized use only.</p>
-							<p class="white">Unauthorized or improper use of this system is prohibited and may result in disciplinary action and/or civil and criminal penalties. Personal use of social media and networking sites on this system is limited as to not interfere with official work duties and is subject to monitoring.</p>
-							<p class="white">By using this system, you understand and consent to the following:</p>
-							<p class="white">The Government may monitor, record, and audit your system usage, including usage of personal devices and email systems for official duties or to conduct EEOC business. Therefore, you have no reasonable expectation of privacy regarding any communication or data transiting or stored on this system.</p>
-							<p class="white">At any time, and for any lawful Government purpose, the government may monitor, intercept, and search and seize any communication or data transiting or stored on this system. Any communication or data transiting or stored on this system may be disclosed or used for any lawful Government purpose.</p>
-
-						</div>
-
-
-					</div>
-
-
-				</div>
-
 			</div>
 
-
-			<div class="back-to-top">
-				<i aria-hidden="true"class="far fa-angle-up"></i>
-			</div>
-
-
-
-		</div>
-
-		<!-- <div class="bottom-pic">
-		<button class="btn clearButton">Need more help? Contact us.</button>
-	</div> -->
-
-
-	<!-- footer start -->
-
-	<footer>
-		<div class="footer-wrapper-top">
-
-			<div class="d-flex justify-content-start align-items-center">
-				<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
-
-				<h2>U.S. Equal Employment<br>Opportunity Commission</h2>
+			<div class="footer-wrapper">
 
 			</div>
+		</footer>
 
-			<div>
-				<p class="white bold">EEOC Headquarters</p>
-				<p class="white"><i aria-hidden="true" class="fal fa-map-marker-alt"></i> 131 M Street, NE<br><span class="pl-3">Washington DC 20507</span></p>
-			</div>
-			<div>
-				<p class="white bold">Report a Change to Your Company </p>
-				<p class="white"><a class="white" href="">Company Contact Change<br><a class="white" href="">Merger</a><br><a class="white" href="">Acquisitions</a><br><a class="white" href="">Spinoff</a></p>
-			</div>
-			<div>
-				<p class="white bold">Need assistance?</p>
-				<p class="white">
-					<a class="white" href="">Visit the Filer Support Center</a>
-				</p>
-
-				<p class="white bold">Contact Us</p>
-
-				<p class="white"><a class="white" href="mailto:FilerSupport@EEOCdata.org"><i aria-hidden="true" class="fal fa-envelope"></i> FilerSupport@EEOCdata.org</a><br><a class="white" href="tel:855-336-2035"><i aria-hidden="true" class="fal fa-phone"></i> 855-EEOC-035 (855-336-2035)</a></p>
+		<!-- footer end -->
 
 
-			</div>
+		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
+		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 
 
-		</div>
-
-		<div class="footer-wrapper">
-			<!-- <a class="white" href="">FOIA <i aria-hidden="true" class="fal fa-external-link"></i></a>
-			<a class="white" href="">Privacy Policy</a>
-			<a class="white" href="">Disclaimer</a>
-			<a class="white" href="">Accessibility</a>
-			<a class="white" href="">USA.gov <i aria-hidden="true" class="fal fa-external-link"></i></a>
-			<a class="white" href="">Officer of Inspector General <i aria-hidden="true" class="fal fa-external-link"></i></a> -->
-		</div>
-	</footer>
-
-	<!-- footer end -->
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 
 
-	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 
-</body>
-</html>
+	</body>
+	</html>

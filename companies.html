@@ -15,12 +15,15 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 
+
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+
 
 	<div class="main overflow-hidden" id="overview">
 
@@ -104,7 +107,7 @@
 							</div>
 						</li>
 
-						<li class="sideBlock"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
+						<li class="sideBlock active"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
 
 					</ul>
 				</div>
@@ -297,79 +300,21 @@
 			<div class="contactUsOverlay"></div>
 
 
-			<div class="survey-container filing">
+			<div class="filing small">
 
-				<!-- please add survey-wrapper class to container class -->
 
 				<div class="container pt-5 pb-5">
 
-					<h2 class="text-center medium mt-3 mb-3">Welcome to the EEO-1 Component 1 online filing system used to collect filer data.</h2>
-					<p class="navySmall">Enter Username and Password to get started with your data submission for EEO-1. The Username is the email address of the registered user. If you don’t have a username and password or do not have a company ID and passcode to enter then visit the new filer registration.</p>
-					<p class="navySmall mb-5"><b>PAPERWORK REDUCTION ACT INFORMATION</b>: Public reporting burden for this collection of information is estimated to average 5 hours per submission. Send comments concerning this burden estimate or any other aspect of this collection of information to the Equal Employment Opportunity Commission Office of Enterprise Data and Analytics, 131 M Street, NE Room SW30F, Washington, D.C. 20507. According to the Paperwork Reduction Act of 1995, an agency may not conduct or sponsor, and a person is not required to respond to a collection of information unless it displays a valid OMB control number. The OMB control number for this information collection is 3046-0007.</p>
-
-
-					<div class="landing-panel">
-
-						<form role="form"  method="POST">
-						<div class="form-signin">
-							<a class="link" href="">Forgot Username?</a>
-							<label for="MainContent_txtAccessCode2">Username</label>
-							<input name="ctl00$MainContent$txtAccessCode2" type="username" maxlength="50" size="8" id="MainContent_txtAccessCode2" placeholder="email address" class="form-control access">
-							<label for="MainContent_txtAccessCode1" id="MainContent_Label1" class="form-signin-heading">Password</label>
-							<div class="position-relative form-signin-input">
-									<a class="link" href="">Forgot Password?</a>
-								<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="AccessCode" class="form-control access" placeholder="i.e. 1234" autocomplete="false">
-								<div class="checkbox">
-									<label class="togglePassword" tabindex="0" aria-hidden="false" aria-label="Show/Hide Passcode">
-										<i id="eye" class="far fa-eye" aria-hidden="true"></i>
-
-										<input id="togglepwd" type="checkbox" value="1">
-
-									</label>
-								</div>
-
-							</div>
-
-							<div class="d-flex justify-content-center mt-3 mb-3">
-							<a href=""><button class="btn darkButton">Begin</button></a>
-
-							</div>
-
+					<h2 class="text-center medium mt-3 mb-3 navy orange-bottom">Companies</h2>
+					<div class="input-group mt-4">
+						<input type="text" class="form-control" placeholder="Enter company name">
+						<div class="input-group-append">
+							<button class="btn searchButton" type="button">
+								<i aria-hidden="true" class="fa fa-search"></i>
+							</button>
 						</div>
-					</form>
-
-						<div class="d-flex justify-content-center mt-4 mb-3 pb-2 pt-2 grayLine">
-							<a href="" class="blueColor small mb-0 mr-1">Never Filed Before or New Business?</a>
-							<div class="flip2"></div>
-
-							<a href="" class="blueColor small mb-0 ml-1">Enter Company ID & Passcode?</a>
-
-						</div>
-
-
 					</div>
 
-					<p class="navySmall text-center mb-0 mt-5"><b>OMB Control Number: 3046-0007<br>Expiration Date: 06/30/2023</b></p>
-
-
-				</div>
-
-
-				<div class="container-fluid padding-0">
-					<div class="blueBlock">
-						<div class="container pt-5 pb-5">
-							<h2 class="text-center white medium mt-3 mb-3">Privacy and Security</h2>
-							<p class="white">This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes (1) this computer network, (2) all computers connected to this network, and (3) all devices and storage media attached to this network or to a computer on this network.</p>
-							<p class="white">This system is provided for Government-authorized use only.</p>
-							<p class="white">Unauthorized or improper use of this system is prohibited and may result in disciplinary action and/or civil and criminal penalties. Personal use of social media and networking sites on this system is limited as to not interfere with official work duties and is subject to monitoring.</p>
-							<p class="white">By using this system, you understand and consent to the following:</p>
-							<p class="white">The Government may monitor, record, and audit your system usage, including usage of personal devices and email systems for official duties or to conduct EEOC business. Therefore, you have no reasonable expectation of privacy regarding any communication or data transiting or stored on this system.</p>
-							<p class="white">At any time, and for any lawful Government purpose, the government may monitor, intercept, and search and seize any communication or data transiting or stored on this system. Any communication or data transiting or stored on this system may be disclosed or used for any lawful Government purpose.</p>
-
-						</div>
-
-
-					</div>
 
 
 				</div>
@@ -377,17 +322,254 @@
 			</div>
 
 
-			<div class="back-to-top">
-				<i aria-hidden="true"class="far fa-angle-up"></i>
+			<div class="container pt-5 pb-5">
+				<div class="card faq-list">
+					<a class="card-link card-header ques" data-toggle="collapse" href="#tab-one">
+						Instructions
+						<span class="caret-down" style="transform: rotate(180deg);"><i aria-hidden="true" class="far fa-angle-down"></i></span>
+					</a>
+					<div id="tab-one" class="collapse show" data-parent="#tab-accordion">
+						<div class="card-body ans">
+							<p><b>You must file and certify your 2019 report prior to filing your 2020 report.</b></p>
+							<p>Important EEO-1 Component 1 Online Filing Dates: </p>
+							<ul>
+								<li>Data collection begins April 26, 2021 </li>
+								<li>Datafile upload is currently unavailable. Access will be available in late May. Check the EEO-1 website for updates. </li>
+								<li>The deadline to submit 2019 and 2020 reports is July 19, 2021</li>
+							</ul>
+							<p>The system is continuously being improved, with new features added on a flow basis. If you encounter an issue, please contact the Filer Support Team at FilerSupport@eeocdata.org or 1-855-EEOC-035 (1-855-336-2035). Thank you for your patience as we continue to improve the online filing system.</p>
+							<p>Before filing, you will be required to confirm company information. You must confirm this information even if you have not had any changes since the 2018 filing.</p>
+							<p>Companies must report acquisitions, mergers, and spinoffs that occurred between August 2019 and December 2020 to the Filer Support Team prior to proceeding with filing. The team will update the records accordingly to ensure accurate reporting.</p>
+							<p>Please refer to the FAQs, User Guides, and Fact Sheets for additional guidance on the online filing system. These are available on the Filer Support Page.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container pb-5 bars">
+				<div class="d-flex justify-content-between align-items-center mb-3">
+						<p class="blue">Records <span class="count">(3)</span></p>
+						<button class="btn clearOrange"><i aria-hidden="true" class="fal fa-plus"></i> Add Company</button>
+					</div>
+
+				<div class="records title d-flex align-items-center">
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>Company<br>Number</h6>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+						<h6>Company Name</h6>
+					</div>
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>Report Year</h6>
+					</div>
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>Status</h6>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+						<h6>City</h6>
+					</div>
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>State</h6>
+					</div>
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>Zip</h6>
+					</div>
+					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+						<h6>No. <br>Employees</h6>
+					</div>
+
+					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+						<h6>No.<br> Locations</h6>
+					</div>
+
+				</div>
+
+				<a href="" class="noDecoration">
+					<div class="barWrapper">
+
+						<div class="records d-flex align-items-center flex-wrap">
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Number</div>
+								<p>Z47520</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Name</div>
+								<p>Frontier Nursing University</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Report Year</div>
+								<p>2020</p>
+							</div>
+
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Status</div>
+								<p>No Response</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">City</div>
+								<p>Versailles</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">State</div>
+								<p>KY</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Zip</div>
+
+								<p>40383</p>
+
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">No. Employees</div>
+								<p>999</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+
+								<div class="mobile">No. Locations</div>
+								<p>999</p>
+
+							</div>
+
+						</div>
+
+
+						<div class="last">
+							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
+
+						</div>
+
+					</div>
+				</a>
+
+
+				<a href="" class="noDecoration">
+					<div class="barWrapper">
+
+						<div class="records d-flex align-items-center flex-wrap">
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Number</div>
+								<p>Z47520</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Name</div>
+								<p>Frontier Nursing University</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Report Year</div>
+								<p>2020</p>
+							</div>
+
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Status</div>
+								<p>No Response</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">City</div>
+								<p>Versailles</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">State</div>
+								<p>KY</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Zip</div>
+
+								<p>40383</p>
+
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">No. Employees</div>
+								<p>999</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+
+								<div class="mobile">No. Locations</div>
+								<p>999</p>
+
+							</div>
+
+						</div>
+
+
+						<div class="last">
+							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
+
+						</div>
+
+					</div>
+				</a>
+
+
+
+				<a href="" class="noDecoration">
+					<div class="barWrapper">
+
+						<div class="records d-flex align-items-center flex-wrap">
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Number</div>
+								<p>Z47520</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Company Name</div>
+								<p>Frontier Nursing University</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Report Year</div>
+								<p>2020</p>
+							</div>
+
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Status</div>
+								<p>No Response</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">City</div>
+								<p>Versailles</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">State</div>
+								<p>KY</p>
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">Zip</div>
+
+								<p>40383</p>
+
+							</div>
+							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+								<div class="mobile">No. Employees</div>
+								<p>999</p>
+							</div>
+							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+
+								<div class="mobile">No. Locations</div>
+								<p>999</p>
+
+							</div>
+
+						</div>
+
+
+						<div class="last">
+							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
+
+						</div>
+
+					</div>
+				</a>
+
+
 			</div>
 
 
 
 		</div>
 
-		<!-- <div class="bottom-pic">
-		<button class="btn clearButton">Need more help? Contact us.</button>
-	</div> -->
+
+		<div class="back-to-top">
+			<i aria-hidden="true"class="far fa-angle-up"></i>
+		</div>
 
 
 	<!-- footer start -->
@@ -427,12 +609,7 @@
 		</div>
 
 		<div class="footer-wrapper">
-			<!-- <a class="white" href="">FOIA <i aria-hidden="true" class="fal fa-external-link"></i></a>
-			<a class="white" href="">Privacy Policy</a>
-			<a class="white" href="">Disclaimer</a>
-			<a class="white" href="">Accessibility</a>
-			<a class="white" href="">USA.gov <i aria-hidden="true" class="fal fa-external-link"></i></a>
-			<a class="white" href="">Officer of Inspector General <i aria-hidden="true" class="fal fa-external-link"></i></a> -->
+
 		</div>
 	</footer>
 
@@ -440,9 +617,13 @@
 
 
 	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
 	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+
+
 	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+
 
 </body>
 </html>
