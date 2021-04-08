@@ -1969,6 +1969,7 @@ figure.effect-lily:hover p {
 .barWrapper {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   overflow-y: hidden;
+  /* overflow-x: scroll; */
   padding-top:1em;
   background: white;
   position: relative;
@@ -1986,6 +1987,7 @@ figure.effect-lily:hover p {
   margin: 10px 0px 10px 0px;
   font-size: 14px;
   text-transform: uppercase;
+  /* display: flex; */
 }
 .mobile {
   display: none;
@@ -1999,8 +2001,43 @@ figure.effect-lily:hover p {
 
 }
 
+.title .one{
+max-width: 10%;
+flex: 0 0 10%;
+}
 
+.title .two{
+max-width: 14%;
+flex: 0 0 14%;
+}
 
+.title .four{
+  max-width: 10%;
+  flex: 0 0 10%
+}
+
+.title .five{
+  max-width: 15%;
+  flex: 0 0 15%
+}
+
+.title .sixth{
+  max-width: 12%;
+  flex: 0 0 12%
+}
+
+.title .seven{
+  margin-right: -1em;
+  margin-left: 1em;
+}
+
+.title .eight{
+  max-width: 12%;
+  flex: 0 0 12%
+}
+.title .nine{
+margin-left: -1.4em;
+}
 
 .rust{
   color:#A03411;

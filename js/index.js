@@ -831,3 +831,387 @@ $('#togglepwd, .togglePassword').keypress(
 ).click(
   togglepwd
 );
+
+
+
+//district page alphabetize and sort numerically
+
+
+
+$('.sortCity').on('click', function() {
+	if (!$('.sortCity').hasClass('ascending')) {
+
+		var ascendOrderedDivs2 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".city").text() > $(b).find(".city").text() ? 1 : -1;
+		});
+
+
+		$(".renderRecords").html(ascendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortCity').addClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortCity').hasClass('ascending')) {
+
+
+		var descendOrderedDivs2 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".city").text() > $(b).find(".city").text() ? -1 : 1;
+		});
+
+
+		$(".renderRecords").html(descendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortCity').removeClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+
+	}
+
+});
+
+$('.sortState').on('click', function() {
+	if (!$('.sortState').hasClass('ascending')) {
+
+		var ascendOrderedDivs2 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".state").text() > $(b).find(".state").text() ? 1 : -1;
+		});
+
+
+		$(".renderRecords").html(ascendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortState').addClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortState').hasClass('ascending')) {
+
+		var descendOrderedDivs2 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".state").text() > $(b).find(".state").text() ? -1 : 1;
+		});
+
+
+		$(".renderRecords").html(descendOrderedDivs2);
+		setTimeout(function() {
+			$('.sortState').removeClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+
+	}
+
+});
+
+
+$('.sortId').on('click', function() {
+
+	if (!$('.sortId').hasClass('ascending')) {
+		var ascendOrderedDivs4 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".id").text().toString().localeCompare($(b).find(".id").text().toString(), undefined, {
+				numeric: true,
+				sensitivity: 'base'
+			});
+		});
+
+
+		$(".renderRecords").html(ascendOrderedDivs4);
+		setTimeout(function() {
+			$('.sortId').addClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+	if ($('.sortId').hasClass('ascending')) {
+		var descendOrderedDivs4 = $('.barWrapper').sort(function(a, b) {
+			return $(b).find(".id").text().toString().localeCompare($(a).find(".id").text().toString(), undefined, {
+				numeric: true,
+				sensitivity: 'base'
+			});
+		});
+
+
+		$(".renderRecords").html(descendOrderedDivs4);
+		setTimeout(function() {
+			$('.sortId').removeClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+	}
+});
+
+
+$('.sortName').on('click', function() {
+
+	if (!$('.sortName').hasClass('ascending')) {
+
+		var ascendOrderedDivs5 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".name").text() > $(b).find(".name").text() ? 1 : -1;
+		});
+
+
+		$(".renderRecords").html(ascendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortName').addClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+
+	}
+
+	if ($('.sortName').hasClass('ascending')) {
+
+		var descendOrderedDivs5 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".name").text() > $(b).find(".name").text() ? -1 : 1;
+		});
+
+		$(".renderRecords").html(descendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortName').removeClass('ascending')
+		}, 600)
+
+		$('.title  i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+
+	}
+
+});
+
+
+
+$('.sortYear').on('click', function() {
+
+	if (!$('.sortYear').hasClass('ascending')) {
+
+		var ascendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.year').text()) > parseFloat($(b).find('.year').text()) ? 1 : -1;
+
+		});
+
+		$(".renderRecords").html(ascendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortYear').addClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortYear').hasClass('ascending')) {
+
+		var descendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.year').text()) > parseFloat($(b).find('.year').text()) ? -1 : 1;
+
+		});
+		$(".renderRecords").html(descendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortYear').removeClass('ascending')
+		}, 500)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+	}
+});
+
+$('.sortZip').on('click', function() {
+
+	if (!$('.sortZip').hasClass('ascending')) {
+
+		var ascendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.zip').text()) > parseFloat($(b).find('.zip').text()) ? 1 : -1;
+
+		});
+
+		$(".renderRecords").html(ascendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortZip').addClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortZip').hasClass('ascending')) {
+
+		var descendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.zip').text()) > parseFloat($(b).find('.zip').text()) ? -1 : 1;
+
+		});
+		$(".renderRecords").html(descendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortZip').removeClass('ascending')
+		}, 500)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+	}
+});
+
+$('.sortStatus').on('click', function() {
+
+	if (!$('.sortStatus').hasClass('ascending')) {
+
+		var ascendOrderedDivs5 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".status").text() > $(b).find(".status").text() ? 1 : -1;
+		});
+
+
+		$(".renderRecords").html(ascendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortStatus').addClass('ascending')
+		}, 600)
+
+		$('.title i').each(function() {
+			$('.title i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+
+	}
+
+	if ($('.sortStatus').hasClass('ascending')) {
+
+		var descendOrderedDivs5 = $('.barWrapper').sort(function(a, b) {
+			return $(a).find(".status").text() > $(b).find(".status").text() ? -1 : 1;
+		});
+
+		$(".renderRecords").html(descendOrderedDivs5);
+		setTimeout(function() {
+			$('.sortStatus').removeClass('ascending')
+		}, 600)
+
+		$('.title  i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+
+	}
+
+});
+
+
+$('.sortEmployees').on('click', function() {
+
+	if (!$('.sortEmployees').hasClass('ascending')) {
+
+		var ascendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.employees').text()) > parseFloat($(b).find('.employees').text()) ? 1 : -1;
+
+		});
+
+		$(".renderRecords").html(ascendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortEmployees').addClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortEmployees').hasClass('ascending')) {
+
+		var descendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.employees').text()) > parseFloat($(b).find('.employees').text()) ? -1 : 1;
+
+		});
+		$(".renderRecords").html(descendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortEmployees').removeClass('ascending')
+		}, 500)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+	}
+});
+
+
+
+$('.sortLocations').on('click', function() {
+
+	if (!$('.sortLocations').hasClass('ascending')) {
+
+		var ascendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.locations').text()) > parseFloat($(b).find('.locations').text()) ? 1 : -1;
+
+		});
+
+		$(".renderRecords").html(ascendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortLocations').addClass('ascending')
+		}, 400)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-up"></i>')
+	}
+
+	if ($('.sortLocations').hasClass('ascending')) {
+
+		var descendOrderedDivs10 = $('.barWrapper').sort(function(a, b) {
+
+			return parseFloat($(a).find('.locations').text()) > parseFloat($(b).find('.locations').text()) ? -1 : 1;
+
+		});
+		$(".renderRecords").html(descendOrderedDivs10);
+		setTimeout(function() {
+			$('.sortLocations').removeClass('ascending')
+		}, 500)
+
+		$('.title i').each(function() {
+			$('.title  i').replaceWith('<i class="far fa-sort"></i>')
+		})
+		$(this).find('i').replaceWith('<i class="fad fa-sort-down"></i>')
+	}
+});
