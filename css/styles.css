@@ -1962,8 +1962,12 @@ figure.effect-lily:hover p {
 
 }
 
-.barWrapper {
+.filing.small .input-group .form-control{
+  padding: 1.5rem .75rem;
+}
 
+.barWrapper {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   overflow-y: hidden;
   padding-top:1em;
   background: white;
@@ -1994,6 +1998,9 @@ figure.effect-lily:hover p {
   font-size: 24px;
 
 }
+
+
+
 
 .rust{
   color:#A03411;
@@ -2466,12 +2473,48 @@ a.orange:hover{
     margin-bottom:1em;
   }
 
+  .last.trash {
+    position: absolute;
+    right: 5%;
+    top: 83%;
+    font-size: 24px;
+  }
+
 
 }
 
 @media (max-width:767px){
   .linkItems{
     flex-direction: column !important;
+  }
+
+  .last.trash {
+    position: absolute;
+    right: 5%;
+    top: 83%;
+    font-size: 24px;
+  }
+
+  .completeBox p {
+    color: #086506;
+    font-size: 18px;
+  }
+  .activeBox p, .activeBox i {
+    color: #1A3966;
+    font-size: 18px;
+  }
+
+  .errorBox p {
+    color: #9C001D;
+    font-size: 18px;
+  }
+
+  .pendingBox p {
+    color: #3C3D3C;
+    font-size: 18px;
+  }
+  .complete p, .activeBlue p, .errorRed p, .errorRed i, .pending p {
+    font-size: 16px !important;
   }
 
   .linkItems .justify-content-start {
