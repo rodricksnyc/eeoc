@@ -275,6 +275,14 @@ background: transparent !important;
 
 }
 
+header .end a{
+  align-items: center;
+}
+
+.hoverThis:hover{
+  cursor:pointer;
+}
+
 .padding{
   padding: 0% 22%;
 }
@@ -1589,7 +1597,7 @@ a.white:hover{
 }
 
 .carousel-item{
-  height: 300px !important;
+  height: auto !important;
   padding: 1em;
 
 }
@@ -2002,13 +2010,13 @@ figure.effect-lily:hover p {
 }
 
 .title .one{
-max-width: 10%;
-flex: 0 0 10%;
+  max-width: 10%;
+  flex: 0 0 10%;
 }
 
 .title .two{
-max-width: 14%;
-flex: 0 0 14%;
+  max-width: 14%;
+  flex: 0 0 14%;
 }
 
 .title .four{
@@ -2036,7 +2044,7 @@ flex: 0 0 14%;
   flex: 0 0 12%
 }
 .title .nine{
-margin-left: -1.4em;
+  margin-left: -1.4em;
 }
 
 .rust{
@@ -2311,6 +2319,13 @@ a.orange:hover{
 .clearBackground{
   background: transparent;
   box-shadow:none
+}
+
+
+@media (max-height:600px){
+  #one{
+    top:18%;
+  }
 }
 
 @media (max-width: 1400px) {

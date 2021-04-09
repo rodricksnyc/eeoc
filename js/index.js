@@ -834,7 +834,122 @@ $('#togglepwd, .togglePassword').keypress(
 
 
 
-//district page alphabetize and sort numerically
+
+
+var expand1 = function() {
+
+	 $(this).html() == "Collapse All" ? $(this).html('Expand All') : $(this).html('Collapse All');
+    $('.expandAll1 .collapse').collapse('toggle');
+
+
+if ( $(this).html() == 'Collapse All') {
+	$('.changeIcon').replaceWith('<i class="far fa-compress-arrows-alt darkBlue changeIcon"></i>')
+
+
+}
+
+if ( $(this).html() == 'Expand All') {
+	$('.changeIcon').replaceWith('<i class="fal fa-expand-alt darkBlue changeIcon"></i>')
+}
+
+}
+
+$('#toggleAccordion').keypress(
+	expand1
+
+).click(
+	expand1
+);
+
+
+var expand2 = function() {
+
+	 $(this).html() == "Collapse All" ? $(this).html('Expand All') : $(this).html('Collapse All');
+    $('.expandAll2 .collapse').collapse('toggle');
+
+
+if ( $(this).html() == 'Collapse All') {
+	$('.changeIcon2').replaceWith('<i class="far fa-compress-arrows-alt darkBlue changeIcon2"></i>')
+
+
+}
+
+if ( $(this).html() == 'Expand All') {
+	$('.changeIcon2').replaceWith('<i class="fal fa-expand-alt darkBlue changeIcon2"></i>')
+}
+
+}
+
+$('#toggleAccordion2').keypress(
+	expand2
+
+).click(
+	expand2
+);
+
+
+
+var expand3 = function() {
+
+	 $(this).html() == "Collapse All" ? $(this).html('Expand All') : $(this).html('Collapse All');
+    $('.expandAll3 .collapse').collapse('toggle');
+
+
+if ( $(this).html() == 'Collapse All') {
+	$('.changeIcon3').replaceWith('<i class="far fa-compress-arrows-alt darkBlue changeIcon3"></i>')
+
+
+}
+
+if ( $(this).html() == 'Expand All') {
+	$('.changeIcon3').replaceWith('<i class="fal fa-expand-alt darkBlue changeIcon3"></i>')
+}
+
+}
+
+$('#toggleAccordion3').keypress(
+	expand3
+
+).click(
+	expand3
+);
+
+
+var expand4 = function() {
+
+	 $(this).html() == "Collapse All" ? $(this).html('Expand All') : $(this).html('Collapse All');
+    $('.expandAll4 .collapse').collapse('toggle');
+
+
+if ( $(this).html() == 'Collapse All') {
+	$('.changeIcon4').replaceWith('<i class="far fa-compress-arrows-alt darkBlue changeIcon4"></i>')
+
+
+}
+
+if ( $(this).html() == 'Expand All') {
+	$('.changeIcon3').replaceWith('<i class="fal fa-expand-alt darkBlue changeIcon4"></i>')
+}
+
+}
+
+$('#toggleAccordion4').keypress(
+	expand4
+
+).click(
+	expand4
+);
+
+
+
+
+
+
+
+
+
+
+//sort
 
 
 
