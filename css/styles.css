@@ -2094,6 +2094,12 @@ a.orange:hover{
   color:#F15E2F
 }
 
+.completeBox p.black, .activeBox p.black, .errorBox p.black, .pendingBox p.black{
+  font-size:14px !important;
+  color:black !important;
+
+}
+
 .completeBox, .activeBox, .errorBox, .pendingBox{
   background: #F5FFF1;
   display: flex;
@@ -2168,13 +2174,13 @@ a.orange:hover{
 .errorBox i{
   color: #F91F00;
   font-size:24px;
-  margin:0em .5em
+  margin-right:.5em
 }
 
 .pendingBox i {
   color: #A8A8A8;
   font-size:24px;
-  margin:0em .5em
+  margin-right:.5em
 }
 
 .complete{
@@ -2183,6 +2189,7 @@ a.orange:hover{
   align-items: center;
   margin: 0em 1em;
   padding: .5em 3em;
+  min-width:14em
 }
 
 .activeBlue{
@@ -2232,29 +2239,37 @@ a.orange:hover{
 .complete-bar{
   background: linear-gradient(0.25deg, #088505 -47.62%, #4FD311 31.4%, #5CDF1E 114.98%);
   border-radius: 5px;
-  width:6px;
-  height:100%;
+  width: 12px;
+  height: 100%;
+  margin-right: .5em;
+
 }
 
 .error-bar{
   background: linear-gradient(0.8deg, #9C001D -58.06%, #F91F00 86.01%);
   border-radius: 5px;
-  width:6px;
-  height:100%;
+  width: 12px;
+      height: 100%;
+      margin-right: .5em;
+
 }
 
 .active-bar{
   background: linear-gradient(28.25deg, #1A3966 -81.09%, #015CAB 42.46%, #8BD3EF 147%);
   border-radius: 5px;
-  width:6px;
-  height:100%;
+  width: 12px;
+  height: 100%;
+    margin-right: .5em;
+
 }
 
 .pending-bar{
   background: linear-gradient(28.25deg, #717171 -81.09%, #A8A8A8 42.46%, #DADADA 147%);
   border-radius: 5px;
-  width:6px;
-  height:100%;
+  width: 12px;
+      height: 100%;
+      margin-right: .5em;
+
 }
 
 .lime{
@@ -2262,11 +2277,11 @@ a.orange:hover{
   margin: 0;
   padding: 0;
   font-size: 24px !important;
-  margin:0em .5em
+  margin-right:.5em
 }
 
 .activeBox .blue{
-  margin:0em .5em;
+  margin-right:.5em;
   font-size: 24px !important;
 }
 
