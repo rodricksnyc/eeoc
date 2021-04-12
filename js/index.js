@@ -942,11 +942,28 @@ $('#toggleAccordion4').keypress(
 
 
 
+$('.square input:checkbox').keypress(function (e) {
+	e.preventDefault();
+	if ((e.keyCode ? e.keyCode : e.which) == 13) {
+		$(this).trigger('click');
+	}
+
+});
 
 
+$('.form-check-input').on("keyup", function (e) {
 
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if (code == 9) {
 
+		$(this).parent().find('label').addClass('activate')
+	}
 
+})
+
+$('.form-check-input').on('focusout', function() {
+	$(this).parent().find('label').removeClass('activate')
+})
 
 
 //sort
