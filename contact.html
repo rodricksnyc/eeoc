@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,19 +13,14 @@
 	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
 
 	<link rel="stylesheet" href="css/styles.css">
-
-
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-
+<body data-spy="scroll">
 
 	<div class="main overflow-hidden" id="overview">
-
 
 		<!-- header block start -->
 		<div class="container-fluid padding-0">
@@ -44,11 +38,14 @@
 
 							<h2 class="large ml-3 mb-0 mr-3">EEO-1</h2>
 						</a>
-						<button class="btn user">Log In<span class="user-icon"></span></button>
+						<button class="btn user loggedIn">Andrew Heller <span class="user-icon"></span></button>
 					</div>
 				</header>
 			</div>
 			<!-- header block end -->
+
+
+
 
 			<!-- left side accordion div start -->
 			<div class="accordion">
@@ -107,12 +104,25 @@
 							</div>
 						</li>
 
-						<li class="sideBlock active"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
+						<li class="sideBlock"><a class="darkBlue" href="filing-system.html">Filing System</a></li>
 
 					</ul>
 				</div>
 			</div>
 			<!-- left side accordion div end -->
+
+
+			<div class="hero-img-container small">
+
+				<div class="padding">
+					<h3 class="white pt-4 text-center orange-bottom">Contact Us</h3>
+
+				</div>
+
+
+
+				<div class="hero-img small"></div>
+			</div>
 
 			<!-- start contact form -->
 			<div id="slideOut" class="content-top">
@@ -209,6 +219,7 @@
 
 						<div class="faq">
 
+
 							<a href="">
 								<div class="whiteBox">
 									<div class="d-flex flex-column">
@@ -299,342 +310,172 @@
 
 			<div class="contactUsOverlay"></div>
 
+			<div class="container pb-5">
 
-			<div class="filing small">
+
+				<h3 class="text-center mt-5"><i aria-hidden="true" class="fal fa-envelope-open-text orange"></i></h3>
+				<h2 class="text-center medium mt-3">Can’t Find An Answer?</h2>
+				<p class="larger text-center mb-5">Contact the Filer Support Center through the following contact forms</p>
 
 
-				<div class="container pt-5 pb-5">
 
-					<h2 class="text-center medium mt-3 mb-3 navy orange-bottom">Companies</h2>
-					<div class="input-group mt-4">
-						<input type="text" class="form-control" placeholder="Enter company name">
-						<div class="input-group-append">
-							<button class="btn searchButton" type="button">
-								<i aria-hidden="true" class="fa fa-search"></i>
-							</button>
-						</div>
+
+				<div class="row mt-5">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<a target="_blank" href="/eeo1/start/ContactUsChanges" class="noDecoration">
+							<div class="contact">
+								<div class="d-flex flex-column align-items-center">
+									<h5><b><i aria-hidden="true" class="fal fa-address-card"></i> Report a Company Contact Change</b></h5>
+
+
+									<i aria-hidden="true" class="fal fa-arrow-right orange shake mt-3"></i>
+
+
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<a target="_blank" href="/eeo1/start/ContactUsMergers" class="noDecoration">
+							<div class="contact">
+								<div class="d-flex flex-column align-items-center">
+									<h5><b><img src="images/merger.svg" class="img-responsive"> Report a Merger</b></h5>
+
+
+									<i class="fal fa-arrow-right orange shake mt-3" aria-hidden="true"></i>
+
+
+								</div>
+
+							</div>
+						</a>
 					</div>
 
 
 
-				</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<a target="_blank" href="/eeo1/start/ContactUsMergers" class="noDecoration">
+							<div class="contact">
+								<div class="d-flex flex-column align-items-center">
+									<h5><b><i aria-hidden="true" class="fal fa-handshake"></i> Report an Acquisition</b></h5>
 
-			</div>
+
+									<i aria-hidden="true" class="fal fa-arrow-right orange shake mt-3"></i>
 
 
-			<div class="container pt-5 pb-5">
-				<div class="card faq-list">
-					<a class="card-link card-header ques" data-toggle="collapse" href="#tab-one">
-						Instructions
-						<span class="caret-down"><i aria-hidden="true" class="far fa-angle-down"></i></span>
-					</a>
-					<div id="tab-one" class="collapse" data-parent="#tab-accordion">
-						<div class="card-body ans">
-							<p><b>You must file and certify your 2019 report prior to filing your 2020 report.</b></p>
-							<p>Important EEO-1 Component 1 Online Filing Dates:</p>
-							<ul>
-								<li>Data collection begins April 26, 2021.</li>
-								<li>Datafile upload is currently unavailable. Access will be available in late May. Check the EEO-1 website for updates.</li>
-								<li>The deadline to submit 2019 and 2020 reports is July 19, 2021</li>
-							</ul>
-							<p>The system is continuously being improved, with new features added on a flow basis. If you encounter an issue, please contact the Filer Support Team at FilerSupport@eeocdata.org or 1-855-EEOC-035 (1-855-336-2035). Thank you for your patience as we continue to improve the online filing system.</p>
-							<p>Before filing, you will be required to confirm company information. You must confirm this information even if you have not had any changes since the 2018 filing.</p>
-							<p>Companies must report acquisitions, mergers, and spinoffs that occurred between August 2019 and December 2020 to the Filer Support Team prior to proceeding with filing. The team will update the records accordingly to ensure accurate reporting.</p>
-							<p>Please refer to the FAQs, User Guides, and Fact Sheets for additional guidance on the online filing system. These are available on the Filer Support Page.</p>
-						</div>
+								</div>
+
+							</div>
+						</a>
 					</div>
-				</div>
-			</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<a target="_blank" href="/eeo1/start/ContactUsSpinoffs" class="noDecoration">
+							<div class="contact">
+								<div class="d-flex flex-column align-items-center">
+									<h5><b><i aria-hidden="true" class="fal fa-code-branch"></i> Report a Spinoff</b></h5>
 
 
-			<div class="container pb-5 bars">
-				<div class="d-flex justify-content-between align-items-center mb-3">
-						<p class="blue">Records <span class="count">(3)</span></p>
-						<button class="btn clearOrange"><i aria-hidden="true" class="fal fa-plus"></i> Add Company</button>
-					</div>
+									<i aria-hidden="true" class="fal fa-arrow-right orange shake mt-3"></i>
 
-				<div class=" title d-flex align-items-center">
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 one">
-						<h6 class="sortId">Company<br>Number <i class="far fa-sort"></i></h6>
 
-					</div>
-					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 two">
-						<h6 class="sortName">Company<br>Name <i class="far fa-sort"></i></h6>
+								</div>
 
-					</div>
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 three">
-						<h6 class="sortYear">Report Year <i class="far fa-sort"></i></h6>
-
-					</div>
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 four">
-						<h6 class="sortStatus">Status <i class="far fa-sort"></i></h6>
-
-					</div>
-					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 five">
-						<h6 class="sortCity">City <i class="far fa-sort"></i></h6>
-
-					</div>
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 six">
-						<h6 class="sortState">State <i class="far fa-sort"></i></h6>
-
-					</div>
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 seven">
-						<h6 class="sortZip">Zip <i class="far fa-sort"></i></h6>
-
-					</div>
-					<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6 eight">
-						<h6 class="sortEmployees">No.<br>Employees <i class="far fa-sort"></i></h6>
-
-					</div>
-
-					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 nine">
-						<h6 class="sortLocations">No.<br>Locations 	<i class="far fa-sort"></i></h6>
-
+							</div>
+						</a>
 					</div>
 
 				</div>
 
-				<div class="renderRecords">
+				<div class="row mb-5">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<a target="_blank" href="/eeo1/start/ContactUsChanges" class="noDecoration">
+							<div class="contact pt-4 pb-4">
+								<div class="d-flex justify-content-between align-items-center">
+									<h5 class="mb-0"><b><i aria-hidden="true" class="fal fa-question-circle"></i> Send General Questions</b></h5>
 
-				<a href="" class="noDecoration">
-					<div class="barWrapper">
 
-						<div class="records d-flex align-items-center flex-wrap">
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Number</div>
-								<p class="id">Z33320</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Name</div>
-								<p class="name">Frontier Nursing University</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Report Year</div>
-								<p class="year">2018</p>
-							</div>
+									<i aria-hidden="true" class="fal fa-arrow-right orange shake" aria-hidden="true"></i>
 
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Status</div>
-								<p class="status">Response</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">City</div>
-								<p class="city">Versailles</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">State</div>
-								<p class="state">KY</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Zip</div>
 
-								<p class="zip">40383</p>
+								</div>
 
 							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">No. Employees</div>
-								<p class="employees">505</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-
-								<div class="mobile">No. Locations</div>
-								<p class="locations">239</p>
-
-							</div>
-
-						</div>
-
-
-						<div class="last">
-							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
-
-						</div>
-
+						</a>
 					</div>
-				</a>
+
+				</div>
 
 
-				<a href="" class="noDecoration">
-					<div class="barWrapper">
-
-						<div class="records d-flex align-items-center flex-wrap">
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Number</div>
-								<p class="id">Z89520</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Name</div>
-								<p class="name">California State University, Long Beach</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Report Year</div>
-								<p class="year">2021</p>
-							</div>
-
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Status</div>
-								<p class="status">No Response</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">City</div>
-								<p class="city">Winchester-on-the-Severn</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">State</div>
-								<p class="state">MD</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Zip</div>
-
-								<p class="zip">21067</p>
-
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">No. Employees</div>
-								<p class="employees">66665559</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-
-								<div class="mobile">No. Locations</div>
-								<p class="locations">94846</p>
-
-							</div>
-
-						</div>
-
-
-						<div class="last">
-							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
-
-						</div>
-
-					</div>
-				</a>
-
-
-
-				<a href="" class="noDecoration">
-					<div class="barWrapper">
-
-						<div class="records d-flex align-items-center flex-wrap">
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Number</div>
-								<p class="id">Z38120</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Company Name</div>
-								<p class="name">University of Maine</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Report Year</div>
-								<p class="year">2019</p>
-							</div>
-
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Status</div>
-								<p class="status">Some Response</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">City</div>
-								<p class="city">Mooselookmeguntic</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">State</div>
-								<p class="state">ME</p>
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">Zip</div>
-
-								<p class="zip">04987</p>
-
-							</div>
-							<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
-								<div class="mobile">No. Employees</div>
-								<p class="employees">1399</p>
-							</div>
-							<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-
-								<div class="mobile">No. Locations</div>
-								<p class="locations">79</p>
-
-							</div>
-
-						</div>
-
-
-						<div class="last">
-							<i aria-hidden="true" class="fal fa-arrow-right orange shake"></i>
-
-						</div>
-
-					</div>
-				</a>
 
 			</div>
+
+
+
+			<div class="back-to-top">
+				<i aria-hidden="true" class="far fa-angle-up"></i>
 			</div>
 
 
 
 		</div>
 
-
-		<div class="back-to-top">
-			<i aria-hidden="true"class="far fa-angle-up"></i>
-		</div>
-
-
-	<!-- footer start -->
-
-	<footer>
-		<div class="footer-wrapper-top">
-
-			<div class="d-flex justify-content-start align-items-center">
-				<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
-
-				<h2>U.S. Equal Employment<br>Opportunity Commission</h2>
-
-			</div>
-
-			<div>
-				<p class="white bold">EEOC Headquarters</p>
-				<p class="white"><i aria-hidden="true" class="fal fa-map-marker-alt"></i> 131 M Street, NE<br><span class="pl-3">Washington DC 20507</span></p>
-			</div>
-			<div>
-				<p class="white bold">Report a Change to Your Company </p>
-				<p class="white"><a class="white" href="">Company Contact Change<br><a class="white" href="">Merger</a><br><a class="white" href="">Acquisitions</a><br><a class="white" href="">Spinoff</a></p>
-			</div>
-			<div>
-				<p class="white bold">Need assistance?</p>
-				<p class="white">
-					<a class="white" href="">Visit the Filer Support Center</a>
-				</p>
-
-				<p class="white bold">Contact Us</p>
-
-				<p class="white"><a class="white" href="mailto:FilerSupport@EEOCdata.org"><i aria-hidden="true" class="fal fa-envelope"></i> FilerSupport@EEOCdata.org</a><br><a class="white" href="tel:855-336-2035"><i aria-hidden="true" class="fal fa-phone"></i> 855-EEOC-035 (855-336-2035)</a></p>
-
-
-			</div>
-
+		<div class="bottom-pic support">
 
 		</div>
 
-		<div class="footer-wrapper">
-
-		</div>
-	</footer>
-
-	<!-- footer end -->
 
 
-	<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
-	<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+		<!-- footer start -->
+
+		<footer>
+			<div class="footer-wrapper-top">
+
+				<div class="d-flex justify-content-start align-items-center">
+					<img src="images/logo.png" class="img-responsive eeoc" alt="U.S. Equal Employment Opportunity Commission Logo">
+
+					<h2>U.S. Equal Employment<br>Opportunity Commission</h2>
+
+				</div>
+
+				<div>
+					<p class="white bold">EEOC Headquarters</p>
+					<p class="white"><i aria-hidden="true" class="fal fa-map-marker-alt"></i> 131 M Street, NE<br><span class="pl-3">Washington DC 20507</span></p>
+				</div>
+				<div>
+					<p class="white bold">Report a Change to Your Company </p>
+					<p class="white"><a class="white" href="">Company Contact Change<br><a class="white" href="">Merger</a><br><a class="white" href="">Acquisitions</a><br><a class="white" href="">Spinoff</a></p>
+				</div>
+				<div>
+					<p class="white bold">Need assistance?</p>
+					<p class="white">
+						<a class="white" href="">Visit the Filer Support Center</a>
+					</p>
+
+					<p class="white bold">Contact Us</p>
+
+					<p class="white"><a class="white" href="mailto:FilerSupport@EEOCdata.org"><i aria-hidden="true" class="fal fa-envelope"></i> FilerSupport@EEOCdata.org</a><br><a class="white" href="tel:855-336-2035"><i aria-hidden="true" class="fal fa-phone"></i> 855-EEOC-035 (855-336-2035)</a></p>
 
 
-	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+				</div>
 
 
-</body>
-</html>
+			</div>
+
+			<div class="footer-wrapper">
+
+			</div>
+		</footer>
+
+		<!-- footer end -->
+
+
+		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+	</html>
