@@ -1712,6 +1712,127 @@ a.white:hover{
   max-width: 5em;
 }
 
+
+/* IE modal start */
+
+#myModal2 h4 {
+  color: #1A3966;
+  font-size: 24px !important;
+  border-bottom: none;
+  margin: 0 !important;
+  font-weight:600 !important
+}
+
+#myModal2 {
+  top: 15%;
+}
+
+#myModal2 .modal-dialog {
+  max-width: 900px !important;
+}
+#myModal2 .modal-header {
+  border-bottom: none !important;
+  background: rgba(139, 211, 239, 0.14);
+  padding: 1em;
+}
+
+#myModal2 .modal-body {
+  padding: 2em 4em 0em 4em;
+}
+
+
+#myModal2 .modal-body {
+  padding-left: 4em !important;
+  padding-right: 4em !important;
+  text-align: center;
+  padding-top: 0px !important;
+  overflow-y: auto;
+  height: auto;
+  max-height: 600px;
+}
+
+#myModal2 .black {
+  line-height: 1.6 !important;
+  font-size: 18px !important;
+  margin: 1em 0em;
+  text-align: left;
+}
+
+#myModal2 .icon-row {
+  margin: 1em 7em 0em 7em;
+}
+
+#myModal2 .vertical2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 0em 1em;
+}
+
+#myModal2 .icon {
+  width: 70px;
+  height: 70px;
+}
+#myModal2 .icon {
+  margin-bottom: .3em;
+}
+
+#myModal2 .vertical2 p {
+  color: #00467f !important;
+}
+
+#myModal2 .modal-body p {
+  font-size: 21px !important;
+}
+
+#myModal2 .modal-footer {
+  border-top: none !important;
+  /* margin-top: 1em; */
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.tealBubble {
+  background: #003D7E;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+  padding: .5rem 4rem;
+  border-radius: 2rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: auto;
+  padding: .2rem 2rem !important;
+}
+
+
+/* IE modal end */
+
+
+
+
+
 /* EEO1 page */
 
 .hoverEffect .grid {
@@ -2351,7 +2472,7 @@ a.orange:hover{
 }
 
 
-.completeBox:hover, .activeBox:hover, .errorBox:hover, .pendingBox:hover{
+.completeBox:hover, .activeBox:hover, .errorBox:hover, .pendingBox:hover, .barWrapper:hover{
   -webkit-transition: transform .6s ease-in-out;
   -moz-transition: transform .6s ease-in-out;
   -ms-transition: transform .6s ease-in-out;
@@ -2379,6 +2500,57 @@ a.orange:hover{
 .completeBox p {
   color:#086506;
   font-size:23px;
+}
+
+.finish{
+  background: #DDFCD3;
+
+  box-shadow: 0px 20px 40px rgba(81, 33, 6, 0.13);
+  padding: 0em;
+  position: relative;
+  flex-flow: column;
+}
+
+.finish .start, .finish .complete-bar{
+  min-height:8em
+}
+
+.greenClear{
+  background: transparent;
+  color:#088505;
+  border:1px solid;
+  padding:.25em 2em;
+  border-radius:1rem;
+}
+
+.greenClear:hover{
+  color:white;
+  background-color: #088505
+}
+
+
+.greenCheckBackground{
+  background: linear-gradient(82.54deg, rgba(8, 133, 5, 0.2) -31.35%, rgba(79, 211, 17, 0.2) 38.81%, rgba(92, 223, 30, 0.2) 113.02%);
+
+  border-radius: 50%;
+  padding: .75em 1em;
+  border-radius: 50%;
+  margin: 0em 1em;
+}
+
+.greenCheckBackground i{
+  color: #086506;
+  font-size: 38px;
+}
+
+.completeBox .bottom{
+  background: #F5FFF1;
+  padding:1em
+}
+
+.completeBox p.smallGreen {
+  color:#086506;
+  font-size:18px;
 }
 
 .errorBox p {
