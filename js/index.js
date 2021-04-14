@@ -203,8 +203,12 @@ $('.sideBlock.panel a').on('click', function(e) {
 
 //back to top
 
+// 
+// $('.back-to-top').click(() => {
+//   scrollfn("#overview");
+// })
 
-$('.back-to-top').click(() => {
+$('.back-to-top').on('click', function() {
   scrollfn("#overview");
 })
 
